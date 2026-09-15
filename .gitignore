@@ -72,7 +72,8 @@ refrigerant_finding/candidates_novel_seguridad/*
 refrigerant_finding/molecules_with_melting_points.csv
 refrigerant_finding/Compound List.xlsx
 
-# Synthesizability / third-party models (not promised in the paper)
+refrigerant_finding/candidates_refrigerantsmf/canonicalized_molecules_properties.csv
+refrigerant_finding/candidates_refrigerantsmf/synthesizability_*
 third_party/
 synthesizability/
 **/synthesizability_*
