@@ -1,0 +1,8 @@
+{
+  "fold_name": "fold_00_R134a",
+  "left_out_compound": "R134a",
+  "left_out_refrigerant_id": "00_R134a",
+  "left_out_refrigerant_index": 0,
+  "left_out_smiles": "C(F)(F)(F)F",
+  "n_train_refrigerants": 20
+}

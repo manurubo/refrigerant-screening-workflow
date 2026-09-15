@@ -1,0 +1,12 @@
+{
+  "argmax_abs_delta_normalized": "MinPartialCharge",
+  "fold_name": "fold_07_R1234yf",
+  "l2_delta_normalized": 0.014622267656465706,
+  "l2_delta_raw": 0.199986342164911,
+  "left_out_compound": "R1234yf",
+  "left_out_refrigerant_id": "07_R1234yf",
+  "max_abs_delta_normalized": 0.00836824039232864,
+  "max_abs_delta_raw": 0.13935084141682097,
+  "mean_abs_delta_normalized": 0.002885466325364994,
+  "n_train": 20
+}

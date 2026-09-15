@@ -1,0 +1,92 @@
+# Local lab dump (not part of the public screening workflow)
+cocograph/
+molecular_formulas.csv
+ORIGIN.md
+fix_overleaf_si.sh
+
+# Manuscript, reviews, Overleaf
+paper_final/
+**/paper_final/
+*.tex
+*.aux
+*.log
+*.out
+*.bbl
+*.blg
+refrigerant_finding/main_paper_rev2.tex
+refrigerant_finding/refrigerants_paper.tex
+refrigerant_finding/refrigerants_paper_tiago.tex
+refrigerant_finding/review_answer.md
+refrigerant_finding/review_assigned.md
+refrigerant_finding/cosas_hechas.md
+refrigerant_finding/REFRIGERANT_PROPERTIES.pdf
+refrigerant_finding/profile_robustness/profile_robustness_summary.tex
+refrigerant_finding/profile_robustness/profile_robustness_summary.pdf
+refrigerant_finding/profile_robustness/profile_robustness_summary.aux
+refrigerant_finding/profile_robustness/profile_robustness_summary.out
+
+# Paper figures and visualisation-only scripts
+**/*.png
+**/*.svg
+**/*.jpg
+**/*.jpeg
+**/*.pdf
+paper_figures/
+paper_figures_2/
+figuras_tiago/
+figure0_help/
+refrigerant_finding/create_paper_figures*.py
+refrigerant_finding/visualize_*.py
+refrigerant_finding/display_refrigerants.py
+refrigerant_finding/create_excel_with_images.py
+refrigerant_finding/find_melting_points.py
+refrigerant_finding/find_melting_points.ipynb
+refrigerant_finding/refrigerant_processing.ipynb
+refrigerant_finding/colores_compuestos_A_E_para_Tiago.txt
+refrigerant_finding/profile_robustness/plot_*.py
+
+# Spreadsheets with embedded molecule images
+**/*.xlsx
+**/*.xls
+**/*.xlsm
+refrigerant_finding/Compound List.xlsx
+
+# Alternate / exploratory candidate dumps (not the published pools)
+refrigerant_finding/candidates_generated/
+refrigerant_finding/candidates_generated_extra/
+refrigerant_finding/candidates_repetimos/
+refrigerant_finding/candidates_novel_sinrojos/
+refrigerant_finding/candidates_refrigerantsmf_seguridad/
+refrigerant_finding/refrigerant_finding/
+
+# PubChem dump used only to build the shipped IIb cache (~4 GB)
+**/CID-SMILES*
+
+# Type IIb folder keeps only the shared ranking symlink + PubChem-absent cache
+refrigerant_finding/candidates_novel_seguridad/*
+!refrigerant_finding/candidates_novel_seguridad/README.md
+!refrigerant_finding/candidates_novel_seguridad/iib_pubchem_absent_candidate_smiles.txt
+!refrigerant_finding/candidates_novel_seguridad/all_molecules_ranked.csv
+
+# Not part of the screening workflow
+refrigerant_finding/molecules_with_melting_points.csv
+refrigerant_finding/Compound List.xlsx
+
+# Synthesizability / third-party models (not promised in the paper)
+third_party/
+synthesizability/
+**/synthesizability_*
+
+# Python / editor
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.env
+.DS_Store
+.idea/
+.vscode/
+
+# Robustness figure renders (keep CSV/JSON tables)
+**/figures/

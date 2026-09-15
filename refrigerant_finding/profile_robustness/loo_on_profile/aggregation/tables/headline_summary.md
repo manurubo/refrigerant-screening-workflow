@@ -1,0 +1,17 @@
+| claim | value |
+| --- | --- |
+| n_folds | 21 |
+| n_fixed15 | 15 |
+| p_threshold | 0.05 |
+| all_fixed15_pass_all_folds | True |
+| worst_loo_pvalue | 1.209e-03 |
+| worst_loo_pvalue_still_below_threshold | True |
+| mean_abs_delta_JS (avg over descriptors) | 0.0039 |
+| max_abs_delta_JS (any fold×descriptor) | 0.0582 |
+| feature_largest_max_abs_delta_JS | NumRotatableBonds |
+| mean_abs_delta_rank (avg over descriptors) | 1.17 |
+| max_abs_delta_rank (any fold×descriptor) | 15 |
+| feature_largest_max_abs_delta_rank | NumRotatableBonds |
+| most_frequent_extreme_left_out_fluid | R134a |
+| n_near_substitutes_present_in_all_folds | 50 |
+| zero_JS_variance_descriptors | TPSA, NumHAcceptors |

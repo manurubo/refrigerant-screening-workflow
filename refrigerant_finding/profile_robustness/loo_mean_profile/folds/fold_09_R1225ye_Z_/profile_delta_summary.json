@@ -1,0 +1,12 @@
+{
+  "argmax_abs_delta_normalized": "MinPartialCharge",
+  "fold_name": "fold_09_R1225ye_Z_",
+  "l2_delta_normalized": 0.02736113413275352,
+  "l2_delta_raw": 0.7556129707010237,
+  "left_out_compound": "R1225ye(Z)",
+  "left_out_refrigerant_id": "09_R1225ye(Z)",
+  "max_abs_delta_normalized": 0.011413054868516848,
+  "max_abs_delta_raw": 0.6855603321575572,
+  "mean_abs_delta_normalized": 0.006171837797909785,
+  "n_train": 20
+}

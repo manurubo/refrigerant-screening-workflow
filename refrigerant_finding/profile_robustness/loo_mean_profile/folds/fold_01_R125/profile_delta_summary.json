@@ -1,0 +1,12 @@
+{
+  "argmax_abs_delta_normalized": "MolMR",
+  "fold_name": "fold_01_R125",
+  "l2_delta_normalized": 0.035658177979789915,
+  "l2_delta_raw": 0.7483369013322758,
+  "left_out_compound": "R125",
+  "left_out_refrigerant_id": "01_R125",
+  "max_abs_delta_normalized": 0.016132153682053896,
+  "max_abs_delta_raw": 0.595253619194601,
+  "mean_abs_delta_normalized": 0.008067484655239647,
+  "n_train": 20
+}

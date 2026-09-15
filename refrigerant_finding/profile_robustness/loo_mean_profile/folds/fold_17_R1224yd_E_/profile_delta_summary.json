@@ -1,0 +1,12 @@
+{
+  "argmax_abs_delta_normalized": "MolLogP",
+  "fold_name": "fold_17_R1224yd_E_",
+  "l2_delta_normalized": 0.03506641161149056,
+  "l2_delta_raw": 0.4925911311255124,
+  "left_out_compound": "R1224yd(E)",
+  "left_out_refrigerant_id": "17_R1224yd(E)",
+  "max_abs_delta_normalized": 0.019842735247687093,
+  "max_abs_delta_raw": 0.41700682048949034,
+  "mean_abs_delta_normalized": 0.006723120903584771,
+  "n_train": 20
+}

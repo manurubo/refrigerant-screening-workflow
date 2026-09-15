@@ -1,0 +1,4 @@
+strategy,metric,baseline_metric,spearman_rho,spearman_pvalue,n_paired,spearman_rho_top100_baseline,spearman_pvalue_top100_baseline,n_paired_top100_baseline,top100_baseline_unique,top100_kept,top100_retention,filtered_baseline,filtered_kept,filtered_new_size,filtered_retention
+III,manhattan,euclidean,0.9910485933503838,2.504226080491919e-60,69,0.9910485933503838,2.504226080491919e-60,69,57,57,1.0,23,23,23,1.0
+III,cosine,euclidean,0.965144318597004,9.933613005367724e-41,69,0.965144318597004,9.933613005367724e-41,69,57,57,1.0,23,23,23,1.0
+III,chebyshev,euclidean,0.9539276580197297,9.502328445436486e-37,69,0.9539276580197297,9.502328445436486e-37,69,57,57,1.0,23,23,23,1.0

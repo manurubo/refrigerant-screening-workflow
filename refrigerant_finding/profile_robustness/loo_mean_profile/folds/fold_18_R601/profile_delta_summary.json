@@ -1,0 +1,12 @@
+{
+  "argmax_abs_delta_normalized": "NumRotatableBonds",
+  "fold_name": "fold_18_R601",
+  "l2_delta_normalized": 0.09962519540234242,
+  "l2_delta_raw": 2.261433747448161,
+  "left_out_compound": "R601",
+  "left_out_refrigerant_id": "18_R601",
+  "max_abs_delta_normalized": 0.04523809523809523,
+  "max_abs_delta_raw": 2.0106491585831847,
+  "mean_abs_delta_normalized": 0.02127492401363695,
+  "n_train": 20
+}

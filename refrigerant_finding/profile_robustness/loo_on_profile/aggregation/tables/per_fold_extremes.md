@@ -1,0 +1,17 @@
+| Feature | max_abs_delta_JS | fold_max_abs_delta_JS | left_out_max_abs_delta_JS | delta_JS_at_max | JS_at_max_abs_delta | max_pvalue | fold_max_pvalue | left_out_max_pvalue | max_abs_delta_rank | fold_max_abs_delta_rank | left_out_max_abs_delta_rank | delta_rank_at_max | rank_at_max_abs_delta |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| MaxPartialCharge | 0.032306 | fold_05_R1123 | R1123 | 0.032306 | 0.78828 | 3.94714e-08 | fold_00_R134a | R134a | 3 | fold_18_R601 | R601 | 3 | 4 |
+| SMR_VSA1 | 0.024321 | fold_18_R601 | R601 | 0.024321 | 0.778207 | 6.2188e-07 | fold_04_R227ea | R227ea | 2 | fold_20_R13I1 | R13I1 | 2 | 4 |
+| MinEStateIndex | 0.032231 | fold_19_R601a | R601a | 0.032231 | 0.784261 | 1.2755e-08 | fold_12_R1345fz | R1345fz | 2 | fold_03_R236fa | R236fa | -2 | 1 |
+| MolMR | 0.00597002 | fold_18_R601 | R601 | 0.00597002 | 0.755475 | 7.60412e-12 | fold_00_R134a | R134a | 1 | fold_00_R134a | R134a | 1 | 5 |
+| FpDensityMorgan3 | 0.0146525 | fold_20_R13I1 | R13I1 | 0.0146525 | 0.761072 | 1.36208e-10 | fold_12_R1345fz | R1345fz | 4 | fold_20_R13I1 | R13I1 | -4 | 1 |
+| MinPartialCharge | 0.00853654 | fold_00_R134a | R134a | 0.00853654 | 0.749863 | 8.3184e-08 | fold_18_R601 | R601 | 2 | fold_00_R134a | R134a | -2 | 4 |
+| fr_halogen | 0.0391818 | fold_18_R601 | R601 | 0.0391818 | 0.737992 | 1.11481e-16 | fold_01_R125 | R125 | 6 | fold_18_R601 | R601 | -6 | 9 |
+| fr_alkyl_halide | 0.0330896 | fold_18_R601 | R601 | 0.0330896 | 0.719267 | 1.50861e-24 | fold_01_R125 | R125 | 7 | fold_05_R1123 | R1123 | -7 | 10 |
+| TPSA | 0 | fold_00_R134a | R134a | 0 | 0.684047 | 1.94098e-10 | fold_00_R134a | R134a | 6 | fold_19_R601a | R601a | 6 | 25 |
+| NumHAcceptors | 0 | fold_00_R134a | R134a | 0 | 0.7011 | 6.6053e-11 | fold_00_R134a | R134a | 6 | fold_19_R601a | R601a | 6 | 19 |
+| VSA_EState1 | 0.0407688 | fold_18_R601 | R601 | 0.0407688 | 0.740408 | 2.70893e-11 | fold_12_R1345fz | R1345fz | 6 | fold_18_R601 | R601 | -6 | 8 |
+| LabuteASA | 0.0105734 | fold_15_R1233zdE | R1233zd(E) | 0.0105734 | 0.661644 | 1.68344e-08 | fold_00_R134a | R134a | 4 | fold_15_R1233zdE | R1233zd(E) | -4 | 24 |
+| MolLogP | 0.0237519 | fold_00_R134a | R134a | 0.0237519 | 0.60666 | 2.20351e-05 | fold_12_R1345fz | R1345fz | 4 | fold_19_R601a | R601a | 4 | 45 |
+| NumHeteroatoms | 0.0110784 | fold_03_R236fa | R236fa | 0.0110784 | 0.451062 | 0.00120863 | fold_04_R227ea | R227ea | 6 | fold_05_R1123 | R1123 | -6 | 74 |
+| NumRotatableBonds | 0.058192 | fold_18_R601 | R601 | 0.058192 | 0.465703 | 4.78612e-05 | fold_00_R134a | R134a | 15 | fold_18_R601 | R601 | -15 | 71 |

@@ -1,0 +1,12 @@
+{
+  "argmax_abs_delta_normalized": "LabuteASA",
+  "fold_name": "fold_03_R236fa",
+  "l2_delta_normalized": 0.01923111256461227,
+  "l2_delta_raw": 0.5169353637426487,
+  "left_out_compound": "R236fa",
+  "left_out_refrigerant_id": "03_R236fa",
+  "max_abs_delta_normalized": 0.010171683038907808,
+  "max_abs_delta_raw": 0.39294082524985186,
+  "mean_abs_delta_normalized": 0.004014939847964398,
+  "n_train": 20
+}

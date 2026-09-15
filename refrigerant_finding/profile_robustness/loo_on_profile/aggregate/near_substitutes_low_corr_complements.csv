@@ -1,0 +1,6 @@
+near_substitute,closest_fixed15,corr_with_closest,max_abs_corr_vs_fixed15,corr_class,swap_role,high_corr_threshold,low_corr_threshold,n_molecules_used
+BCUT2D_MRHI,LabuteASA,0.35319341723438286,0.35319341723438286,low,profile_complement_candidate,0.7,0.4,197
+SMR_VSA6,NumRotatableBonds,0.3443889272410491,0.3443889272410491,low,profile_complement_candidate,0.7,0.4,197
+BCUT2D_MWHI,MolLogP,0.3319326311646898,0.3319326311646898,low,profile_complement_candidate,0.7,0.4,197
+EState_VSA9,LabuteASA,0.2995326510655729,0.2995326510655729,low,profile_complement_candidate,0.7,0.4,197
+EState_VSA6,MolMR,0.22769557476242086,0.22769557476242086,low,profile_complement_candidate,0.7,0.4,197

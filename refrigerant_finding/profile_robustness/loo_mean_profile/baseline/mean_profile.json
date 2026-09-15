@@ -1,0 +1,38 @@
+{
+  "n_fluids": 21,
+  "normalized": {
+    "FpDensityMorgan3": 0.650017901897601,
+    "LabuteASA": 0.5237603593263584,
+    "MaxPartialCharge": 0.698819844233888,
+    "MinEStateIndex": 0.24825642027669528,
+    "MinPartialCharge": 0.32005827498669637,
+    "MolLogP": 0.5454029534600245,
+    "MolMR": 0.5941001594694212,
+    "NumHAcceptors": 0.0,
+    "NumHeteroatoms": 0.5646258503401361,
+    "NumRotatableBonds": 0.09523809523809523,
+    "SMR_VSA1": 0.5374149659863945,
+    "TPSA": 0.0,
+    "VSA_EState1": 0.5272633350074735,
+    "fr_alkyl_halide": 0.4761904761904762,
+    "fr_halogen": 0.5646258503401361
+  },
+  "raw": {
+    "FpDensityMorgan3": 1.417517006802721,
+    "LabuteASA": 39.404803653235255,
+    "MaxPartialCharge": 0.37473239297028876,
+    "MinEStateIndex": -4.063322310405645,
+    "MinPartialCharge": -0.1753364374030221,
+    "MolLogP": 2.125547619047619,
+    "MolMR": 17.878190476190476,
+    "NumHAcceptors": 0.0,
+    "NumHeteroatoms": 3.9523809523809526,
+    "NumRotatableBonds": 0.19047619047619047,
+    "SMR_VSA1": 16.516323274586227,
+    "TPSA": 0.0,
+    "VSA_EState1": 40.21298317166373,
+    "fr_alkyl_halide": 3.3333333333333335,
+    "fr_halogen": 3.9523809523809526
+  },
+  "scale_mode": "freeze_baseline_21"
+}

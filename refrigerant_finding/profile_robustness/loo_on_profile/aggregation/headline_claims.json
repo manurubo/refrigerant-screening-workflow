@@ -1,0 +1,97 @@
+{
+  "n_folds": 21,
+  "n_fixed15": 15,
+  "p_threshold": 0.05,
+  "all_fixed15_pass_all_folds": true,
+  "worst_loo_pvalue": 0.0012086287002842,
+  "worst_loo_pvalue_still_below_threshold": true,
+  "mean_of_per_descriptor_mean_abs_delta_JS": 0.0038872939096676745,
+  "max_abs_delta_JS_across_all": 0.0581920079867356,
+  "feature_with_largest_max_abs_delta_JS": "NumRotatableBonds",
+  "mean_of_per_descriptor_mean_abs_delta_rank": 1.1714285714285713,
+  "max_abs_delta_rank_across_all": 15.0,
+  "feature_with_largest_max_abs_delta_rank": "NumRotatableBonds",
+  "most_frequent_extreme_left_out_fluid": "R134a",
+  "n_near_substitutes_in_all_folds": 50,
+  "top_near_substitutes": [
+    {
+      "Feature": "SlogP_VSA10",
+      "frequency": 1.0,
+      "JS_mean": 0.7337750521967851,
+      "JS_rank_mean": 6.904761904761905
+    },
+    {
+      "Feature": "FpDensityMorgan2",
+      "frequency": 1.0,
+      "JS_mean": 0.7292316200444569,
+      "JS_rank_mean": 8.285714285714286
+    },
+    {
+      "Feature": "Chi0v",
+      "frequency": 1.0,
+      "JS_mean": 0.7110808113317831,
+      "JS_rank_mean": 9.761904761904763
+    },
+    {
+      "Feature": "PEOE_VSA14",
+      "frequency": 1.0,
+      "JS_mean": 0.7054054807573934,
+      "JS_rank_mean": 11.952380952380953
+    },
+    {
+      "Feature": "Chi1",
+      "frequency": 1.0,
+      "JS_mean": 0.7030277328107336,
+      "JS_rank_mean": 11.19047619047619
+    },
+    {
+      "Feature": "Chi1v",
+      "frequency": 1.0,
+      "JS_mean": 0.7029565174340164,
+      "JS_rank_mean": 12.619047619047619
+    },
+    {
+      "Feature": "NOCount",
+      "frequency": 1.0,
+      "JS_mean": 0.696767374372142,
+      "JS_rank_mean": 15.095238095238095
+    },
+    {
+      "Feature": "EState_VSA10",
+      "frequency": 1.0,
+      "JS_mean": 0.6867235854432693,
+      "JS_rank_mean": 18.38095238095238
+    },
+    {
+      "Feature": "AvgIpc",
+      "frequency": 1.0,
+      "JS_mean": 0.6828771700253258,
+      "JS_rank_mean": 19.523809523809526
+    },
+    {
+      "Feature": "Chi0n",
+      "frequency": 1.0,
+      "JS_mean": 0.6811984565299072,
+      "JS_rank_mean": 20.285714285714285
+    }
+  ],
+  "descriptors_with_zero_JS_loo_variance": [
+    "TPSA",
+    "NumHAcceptors"
+  ],
+  "interpretation": "Statistical support (Mann\u2013Whitney p and JS distance) for the curated fixed-15 descriptors is stable under leave-one-out of the 21 profile fluids. This tests metric stability, not automatic re-selection of the 15.",
+  "caveats": [
+    "Fixed-15 was curated multi-criteria (not auto top-15 by JS alone).",
+    "LOO here does not recompute mean profiles or candidate rankings.",
+    "Near-substitutes are significant high-JS alternatives, not replacements claimed in the paper.",
+    "Some descriptors (e.g. TPSA, NumHAcceptors) can show near-zero JS change when values are discrete/shared."
+  ],
+  "near_sub_min_frequency": 0.9,
+  "n_near_substitutes_freq_ge_threshold": 52,
+  "high_corr_threshold": 0.7,
+  "low_corr_threshold": 0.4,
+  "_generated_utc": "2026-07-29T13:59:22.885928+00:00",
+  "n_near_sub_high_corr": 19,
+  "n_near_sub_low_corr": 5,
+  "n_near_sub_mid_corr": 28
+}

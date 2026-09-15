@@ -1,0 +1,2 @@
+n_folds,mean_L2,median_L2,max_L2,max_L2_left_out,mean_of_max_abs_delta,mean_of_mean_abs_delta,n_zero_shift_descriptors
+21,0.03958355467797035,0.0321500503768406,0.0996251954023424,R601,0.01986350503850889,0.008147711057314409,2

@@ -1,0 +1,8 @@
+{
+  "fold_name": "fold_01_R125",
+  "left_out_compound": "R125",
+  "left_out_refrigerant_id": "01_R125",
+  "left_out_refrigerant_index": 1,
+  "left_out_smiles": "C(C(F)(F)F)(F)F",
+  "n_train_refrigerants": 20
+}

@@ -1,0 +1,8 @@
+{
+  "fold_name": "fold_17_R1224yd_E_",
+  "left_out_compound": "R1224yd(E)",
+  "left_out_refrigerant_id": "17_R1224yd(E)",
+  "left_out_refrigerant_index": 17,
+  "left_out_smiles": "C(\\C(F)(F)F)=C(/F)\\Cl",
+  "n_train_refrigerants": 20
+}

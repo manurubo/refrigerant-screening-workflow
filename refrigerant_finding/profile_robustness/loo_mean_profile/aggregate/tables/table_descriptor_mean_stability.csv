@@ -1,0 +1,16 @@
+Descriptor,Category,mean abs d,max abs d,std abs d
+FpDensityMorgan3,Complexity,0.0124,0.0325,0.0084
+MolLogP,Lipophilicity,0.0115,0.0273,0.0079
+LabuteASA,Surface,0.0114,0.0262,0.0079
+MinPartialCharge,Electronic,0.0096,0.0340,0.0089
+MolMR,Complexity,0.0095,0.0297,0.0070
+fr_alkyl_halide,Halogen,0.0093,0.0262,0.0090
+VSA_EState1,Surface,0.0090,0.0264,0.0080
+SMR_VSA1,Surface,0.0087,0.0269,0.0080
+fr_halogen,Halogen,0.0086,0.0282,0.0083
+NumHeteroatoms,Size,0.0086,0.0282,0.0083
+NumRotatableBonds,Polarity,0.0082,0.0452,0.0094
+MinEStateIndex,Electronic,0.0081,0.0376,0.0098
+MaxPartialCharge,Electronic,0.0072,0.0349,0.0093
+TPSA,Surface,0.0000,0.0000,0.0000
+NumHAcceptors,Polarity,0.0000,0.0000,0.0000

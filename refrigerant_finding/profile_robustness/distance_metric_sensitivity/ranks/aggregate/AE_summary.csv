@@ -1,0 +1,6 @@
+code,strategy,euclidean_rank,euclidean_distance,euclidean_rank_in_filtered,euclidean_in_top100,euclidean_in_filtered,manhattan_rank,manhattan_distance,manhattan_in_top100,manhattan_in_filtered,manhattan_delta_rank,cosine_rank,cosine_distance,cosine_in_top100,cosine_in_filtered,cosine_delta_rank,chebyshev_rank,chebyshev_distance,chebyshev_in_top100,chebyshev_in_filtered,chebyshev_delta_rank
+A,III,36,0.4415327258831883,17.0,True,True,38,1.4411373665070106,True,True,2.0,34,0.0328211917347041,True,True,-2.0,20,0.2,True,True,-16.0
+B,I,96,0.3022507033450749,62.0,True,True,80,0.8345992141942464,True,True,-16.0,80,0.014488257997573695,True,True,-16.0,115,0.18888888888888894,False,False,19.0
+C,III,12,0.26847607197482387,5.0,True,True,10,0.7971369865371103,True,True,-2.0,20,0.01275618234312259,True,True,8.0,11,0.11822660098522175,True,True,-1.0
+D,IIa,54,0.3283186808146113,26.0,True,True,45,0.9558116694120223,True,True,-9.0,32,0.01384243814126751,True,True,-22.0,74,0.18888888888888894,True,True,20.0
+E,IIb,45,0.4787497732174326,35.0,True,True,57,1.5563885741950496,True,True,12.0,60,0.04470644617017672,True,True,15.0,25,0.2251777064207594,True,True,-20.0

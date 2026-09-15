@@ -1,0 +1,9 @@
+{
+  "loo_dir": "/export/home/shared/Projects/Manu22-23/MoleculeDifusion/RefrigerantFinding/refrigerant_finding/profile_robustness/loo_on_profile",
+  "output_dir": "/export/home/shared/Projects/Manu22-23/MoleculeDifusion/RefrigerantFinding/refrigerant_finding/profile_robustness/loo_on_profile/aggregation",
+  "n_folds": 21,
+  "n_fixed15": 15,
+  "p_threshold": 0.05,
+  "timestamp_utc": "2026-07-29T13:59:22.885928+00:00",
+  "source_run_config": "/export/home/shared/Projects/Manu22-23/MoleculeDifusion/RefrigerantFinding/refrigerant_finding/profile_robustness/loo_on_profile/run_config.json"
+}

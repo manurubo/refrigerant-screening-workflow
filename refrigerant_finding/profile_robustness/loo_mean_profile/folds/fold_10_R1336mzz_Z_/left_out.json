@@ -1,0 +1,8 @@
+{
+  "fold_name": "fold_10_R1336mzz_Z_",
+  "left_out_compound": "R1336mzz(Z)",
+  "left_out_refrigerant_id": "10_R1336mzz(Z)",
+  "left_out_refrigerant_index": 10,
+  "left_out_smiles": "C(=CC(F)(F)F) C(F)(F)F",
+  "n_train_refrigerants": 20
+}

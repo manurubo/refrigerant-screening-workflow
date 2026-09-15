@@ -1,0 +1,12 @@
+{
+  "argmax_abs_delta_normalized": "MinPartialCharge",
+  "fold_name": "fold_08_R1234ze_E_",
+  "l2_delta_normalized": 0.01789305375996139,
+  "l2_delta_raw": 0.1896029770873625,
+  "left_out_compound": "R1234ze(E)",
+  "left_out_refrigerant_id": "08_R1234ze(E)",
+  "max_abs_delta_normalized": 0.012404198987215898,
+  "max_abs_delta_raw": 0.12815292475014672,
+  "mean_abs_delta_normalized": 0.003316117805794668,
+  "n_train": 20
+}

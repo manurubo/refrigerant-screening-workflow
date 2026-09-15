@@ -1,0 +1,34 @@
+{
+  "l2_delta_normalized": {
+    "max": 0.09962519540234242,
+    "max_fold": "R601",
+    "mean": 0.0395835546779704,
+    "median": 0.03215005037684064
+  },
+  "least_sensitive_descriptors": [
+    "NumHAcceptors",
+    "TPSA",
+    "MaxPartialCharge",
+    "MinEStateIndex",
+    "NumRotatableBonds"
+  ],
+  "max_abs_delta_normalized": {
+    "max": 0.04523809523809523,
+    "mean": 0.01986350503850895,
+    "median": 0.016401494714545217
+  },
+  "mean_abs_delta_normalized": {
+    "max": 0.02127492401363695,
+    "mean": 0.008147711057314464,
+    "median": 0.006557655110599051
+  },
+  "most_sensitive_descriptors": [
+    "FpDensityMorgan3",
+    "MolLogP",
+    "LabuteASA",
+    "MinPartialCharge",
+    "MolMR"
+  ],
+  "n_folds": 21,
+  "scale_mode": "freeze_baseline_21"
+}

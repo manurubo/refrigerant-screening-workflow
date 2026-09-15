@@ -1,0 +1,27 @@
+{
+  "combined_descriptors": "/export/home/shared/Projects/Manu22-23/MoleculeDifusion/RefrigerantFinding/refrigerant_finding/statistical_comparison/combined_descriptors.csv",
+  "fixed_15": [
+    "MaxPartialCharge",
+    "SMR_VSA1",
+    "MinEStateIndex",
+    "MolMR",
+    "FpDensityMorgan3",
+    "MinPartialCharge",
+    "fr_halogen",
+    "fr_alkyl_halide",
+    "TPSA",
+    "NumHAcceptors",
+    "VSA_EState1",
+    "LabuteASA",
+    "MolLogP",
+    "NumHeteroatoms",
+    "NumRotatableBonds"
+  ],
+  "mean_mode": "calculated_from_loo_subset",
+  "n_refrigerants": 21,
+  "output_dir": "/export/home/shared/Projects/Manu22-23/MoleculeDifusion/RefrigerantFinding/refrigerant_finding/profile_robustness/loo_mean_profile",
+  "refrigerants_csv": "/export/home/shared/Projects/Manu22-23/MoleculeDifusion/RefrigerantFinding/refrigerant_finding/refrigerants.csv",
+  "scale_mode": "freeze_baseline_21",
+  "stage": "profile",
+  "timestamp_utc": "2026-07-31T12:03:42.756916+00:00"
+}

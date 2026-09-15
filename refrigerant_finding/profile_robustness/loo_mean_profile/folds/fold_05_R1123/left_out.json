@@ -1,0 +1,8 @@
+{
+  "fold_name": "fold_05_R1123",
+  "left_out_compound": "R1123",
+  "left_out_refrigerant_id": "05_R1123",
+  "left_out_refrigerant_index": 5,
+  "left_out_smiles": "FC=C(F)F",
+  "n_train_refrigerants": 20
+}

@@ -1,0 +1,100 @@
+{
+  "AE_in_top100_by_metric": {
+    "chebyshev": {
+      "A": true,
+      "B": false,
+      "C": true,
+      "D": true,
+      "E": true
+    },
+    "cosine": {
+      "A": true,
+      "B": true,
+      "C": true,
+      "D": true,
+      "E": true
+    },
+    "manhattan": {
+      "A": true,
+      "B": true,
+      "C": true,
+      "D": true,
+      "E": true
+    }
+  },
+  "alternative_metrics": [
+    "manhattan",
+    "cosine",
+    "chebyshev"
+  ],
+  "baseline_metric": "euclidean",
+  "filtered_retention_mean_by_metric": {
+    "chebyshev": 0.8578192640692641,
+    "cosine": 0.908685064935065,
+    "manhattan": 0.8975919913419913
+  },
+  "spearman_rho_mean_by_metric": {
+    "chebyshev": 0.913388669581552,
+    "cosine": 0.9574314497862828,
+    "manhattan": 0.9636099596835669
+  },
+  "spearman_top100_mean_by_metric": {
+    "chebyshev": 0.8616682331367956,
+    "cosine": 0.9436863196732533,
+    "manhattan": 0.923831755298292
+  },
+  "strategies": [
+    "I",
+    "IIa",
+    "IIb",
+    "III"
+  ],
+  "strategy_summaries": {
+    "I": {
+      "baseline_filtered_n": 66,
+      "baseline_metric": "euclidean",
+      "baseline_top_k_unique": 79,
+      "code_excel_filtered_n": 65,
+      "n_ranking_universe": 28236,
+      "note": "Baseline is recomputed Euclidean using the paper's hardcoded mean profile and full-CSV min-max scales; reproduces the historical CSV RefrigerantDistance (Tables S2-S5) to >=6 significant figures.",
+      "paper_filtered_n": 65,
+      "pool_path": "/export/home/shared/Projects/Manu22-23/MoleculeDifusion/RefrigerantFinding/refrigerant_finding/candidates/all_molecules_ranked.csv"
+    },
+    "III": {
+      "baseline_filtered_n": 23,
+      "baseline_metric": "euclidean",
+      "baseline_top_k_unique": 57,
+      "code_excel_filtered_n": 23,
+      "n_ranking_universe": 69,
+      "note": "Baseline is recomputed Euclidean using the paper's hardcoded mean profile and full-CSV min-max scales; reproduces the historical CSV RefrigerantDistance (Tables S2-S5) to >=6 significant figures.",
+      "paper_filtered_n": 23,
+      "pool_path": "/export/home/shared/Projects/Manu22-23/MoleculeDifusion/RefrigerantFinding/refrigerant_finding/candidates_refrigerantsmf/all_molecules_ranked.csv"
+    },
+    "IIa": {
+      "baseline_filtered_n": 56,
+      "baseline_metric": "euclidean",
+      "baseline_top_k_unique": 69,
+      "code_excel_filtered_n": 56,
+      "n_ranking_universe": 24230,
+      "note": "Baseline is recomputed Euclidean using the paper's hardcoded mean profile and full-CSV min-max scales; reproduces the historical CSV RefrigerantDistance (Tables S2-S5) to >=6 significant figures.",
+      "paper_filtered_n": 56,
+      "pool_path": "/export/home/shared/Projects/Manu22-23/MoleculeDifusion/RefrigerantFinding/refrigerant_finding/candidates_novel/all_molecules_ranked.csv"
+    },
+    "IIb": {
+      "baseline_filtered_n": 84,
+      "baseline_metric": "euclidean",
+      "baseline_top_k_unique": 84,
+      "code_excel_filtered_n": 84,
+      "n_ranking_universe": 10632,
+      "note": "Baseline is recomputed Euclidean using the paper's hardcoded mean profile and full-CSV min-max scales; reproduces the historical CSV RefrigerantDistance (Tables S2-S5) to >=6 significant figures.",
+      "paper_filtered_n": 64,
+      "pool_path": "/export/home/shared/Projects/Manu22-23/MoleculeDifusion/RefrigerantFinding/refrigerant_finding/candidates_novel_seguridad/all_molecules_ranked.csv"
+    }
+  },
+  "top100_retention_mean_by_metric": {
+    "chebyshev": 0.8648576932148754,
+    "cosine": 0.9163947637392876,
+    "manhattan": 0.9095251198993631
+  },
+  "top_k": 100
+}

@@ -1,0 +1,15 @@
+{
+  "combined_descriptors": "/export/home/shared/Projects/Manu22-23/MoleculeDifusion/RefrigerantFinding/refrigerant_finding/statistical_comparison/combined_descriptors.csv",
+  "output_dir": "/export/home/shared/Projects/Manu22-23/MoleculeDifusion/RefrigerantFinding/refrigerant_finding/profile_robustness/loo_mean_profile",
+  "refrigerants_csv": "/export/home/shared/Projects/Manu22-23/MoleculeDifusion/RefrigerantFinding/refrigerant_finding/refrigerants.csv",
+  "scale_mode_ranks": "freeze_refrigerants_union_pool",
+  "stage": "ranks",
+  "strategies": {
+    "I": "candidates",
+    "III": "candidates_refrigerantsmf",
+    "IIa": "candidates_novel",
+    "IIb": "candidates_novel_seguridad"
+  },
+  "timestamp_utc": "2026-08-05T14:07:46.059534+00:00",
+  "top_k": 100
+}

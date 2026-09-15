@@ -1,0 +1,22 @@
+fold_id,left_out_compound,left_out_smiles,left_out_refrigerant_id,MaxPartialCharge,SMR_VSA1,MinEStateIndex,MolMR,FpDensityMorgan3,MinPartialCharge,fr_halogen,fr_alkyl_halide,TPSA,NumHAcceptors,VSA_EState1,LabuteASA,MolLogP,NumHeteroatoms,NumRotatableBonds
+fold_00_R134a,R134a,C(F)(F)(F)F,00_R134a,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True
+fold_01_R125,R125,C(C(F)(F)F)(F)F,01_R125,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True
+fold_02_R245fa,R245fa,C(C(F)F)C(F)(F)F,02_R245fa,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True
+fold_03_R236fa,R236fa,C(C(F)(F)F)C (F)(F)F,03_R236fa,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True
+fold_04_R227ea,R227ea,C(C(F)(F)F)(C(F)(F)F)F,04_R227ea,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True
+fold_05_R1123,R1123,FC=C(F)F,05_R1123,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True
+fold_06_R1243zf,R1243zf,C=CC(F)(F)F,06_R1243zf,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True
+fold_07_R1234yf,R1234yf,C=C(C(F)(F)F)F,07_R1234yf,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True
+fold_08_R1234zeE,R1234ze(E),C(=CF)C(F)(F)F,08_R1234ze(E),True,True,True,True,True,True,True,True,True,True,True,True,True,True,True
+fold_09_R1225yeZ,R1225ye(Z),C(=C(C(F)(F)F)F)F,09_R1225ye(Z),True,True,True,True,True,True,True,True,True,True,True,True,True,True,True
+fold_10_R1336mzzZ,R1336mzz(Z),C(=CC(F)(F)F) C(F)(F)F,10_R1336mzz(Z),True,True,True,True,True,True,True,True,True,True,True,True,True,True,True
+fold_11_R1234zeZ,R1234ze(Z),C(=CF)C(F)(F)F,11_R1234ze(Z),True,True,True,True,True,True,True,True,True,True,True,True,True,True,True
+fold_12_R1345fz,R1345fz,C=C(C(F)(F)F)C(F)(F)F,12_R1345fz,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True
+fold_13_R1336mzzE,R1336mzz(E),C(=CC(F)(F)F)C (F)(F)F,13_R1336mzz(E),True,True,True,True,True,True,True,True,True,True,True,True,True,True,True
+fold_14_R1336yf,R1336yf,C=C(C(F)(F)F)C(F)(F)F,14_R1336yf,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True
+fold_15_R1233zdE,R1233zd(E),C(=CCl)C(F)(F)F,15_R1233zd(E),True,True,True,True,True,True,True,True,True,True,True,True,True,True,True
+fold_16_R1224ydZ,R1224yd(Z),C(\C(F)(F)F)=C(\Cl)F,16_R1224yd(Z),True,True,True,True,True,True,True,True,True,True,True,True,True,True,True
+fold_17_R1224ydE,R1224yd(E),C(\C(F)(F)F)=C(/F)\Cl,17_R1224yd(E),True,True,True,True,True,True,True,True,True,True,True,True,True,True,True
+fold_18_R601,R601,CCCCC,18_R601,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True
+fold_19_R601a,R601a,CC(C)CC,19_R601a,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True
+fold_20_R13I1,R13I1,C(F)(F)(F)I,20_R13I1,True,True,True,True,True,True,True,True,True,True,True,True,True,True,True

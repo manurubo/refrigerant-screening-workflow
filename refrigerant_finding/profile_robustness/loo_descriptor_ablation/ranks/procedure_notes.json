@@ -1,0 +1,15 @@
+{
+  "IIb_universe": "PubChem-absent candidates (same cache/procedure as loo_mean_profile ranks / visualize_novel_molecules_grid.py)",
+  "I_IIa_III_universe": "full all_molecules_ranked.csv",
+  "baseline_distance_source": "recomputed Euclidean vs PAPER_HARDCODED_MEANS on all 15 descriptors, using min-max scales from the full unfiltered pool CSV; reproduces historical CSV RefrigerantDistance (Tables S2-S5) to >=6 significant figures",
+  "experiment": "Leave-one-descriptor-out: drop one of the fixed 15 descriptors; re-rank with remaining 14 vs full 15-D baseline. Both use the paper's hardcoded mean profile (PAPER_HARDCODED_MEANS) and min-max scales taken from the full, unfiltered all_molecules_ranked.csv per strategy \u2014 i.e. exactly reproducing the historical screening pipeline (find_refrigerant_candidates.py), not the mean dynamically recomputed from the 21 profile fluids.",
+  "fold_distance_source": "recomputed Euclidean vs PAPER_HARDCODED_MEANS on the 14 kept descriptors, same scale convention",
+  "metrics": [
+    "Spearman \u03c1 (full ranking universe)",
+    "Spearman \u03c1 among baseline top-100 rows",
+    "top-100 unique-SMILES retention",
+    "Thermo-filtered retention",
+    "A\u2013E rank / distance"
+  ],
+  "scale_mode": "min\u2013max on the full, unfiltered all_molecules_ranked.csv per strategy (paper-consistent; active descriptors only)"
+}

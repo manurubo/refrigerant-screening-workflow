@@ -1,0 +1,12 @@
+{
+  "all_fixed15_always_significant": true,
+  "feature_with_largest_max_abs_delta_JS": "VSA_EState1",
+  "max_abs_delta_JS": 0.19694117967609281,
+  "mean_of_mean_abs_delta_JS": 0.02050992769037313,
+  "mean_pairwise_jaccard_significant_fixed15": 1.0,
+  "mean_rep_pass_rate": 1.0,
+  "min_pairwise_jaccard_significant_fixed15": 1.0,
+  "min_rep_pass_rate": 1.0,
+  "n_fixed15": 15,
+  "n_replicates": 20
+}

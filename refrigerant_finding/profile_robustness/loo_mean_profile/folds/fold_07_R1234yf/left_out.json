@@ -1,0 +1,8 @@
+{
+  "fold_name": "fold_07_R1234yf",
+  "left_out_compound": "R1234yf",
+  "left_out_refrigerant_id": "07_R1234yf",
+  "left_out_refrigerant_index": 7,
+  "left_out_smiles": "C=C(C(F)(F)F)F",
+  "n_train_refrigerants": 20
+}

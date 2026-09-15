@@ -1,0 +1,6 @@
+{
+  "IIb": "same novel ranked CSV as IIa \u2192 keep PubChem-absent SMILES in rank order (visualize_novel_molecules_grid.py) \u2192 top-100 \u2192 drop duplicate canonical SMILES \u2192 Excel_candidatos_novel_pubchem (84). NOT: IIa filtered-56 then PubChem filter (that yields ~17).",
+  "I_IIa_III": "full all_molecules_ranked.csv \u2192 top-100 by RefrigerantDistance \u2192 drop molecule_type=refrigerant + known refrigerants.csv \u2192 drop duplicate canonical SMILES",
+  "baseline_distance_source": "CSV RefrigerantDistance (historical)",
+  "loo_distance_source": "recomputed Euclidean vs LOO mean (frozen scales)"
+}

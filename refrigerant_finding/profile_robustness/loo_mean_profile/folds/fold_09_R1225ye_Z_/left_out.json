@@ -1,0 +1,8 @@
+{
+  "fold_name": "fold_09_R1225ye_Z_",
+  "left_out_compound": "R1225ye(Z)",
+  "left_out_refrigerant_id": "09_R1225ye(Z)",
+  "left_out_refrigerant_index": 9,
+  "left_out_smiles": "C(=C(C(F)(F)F)F)F",
+  "n_train_refrigerants": 20
+}

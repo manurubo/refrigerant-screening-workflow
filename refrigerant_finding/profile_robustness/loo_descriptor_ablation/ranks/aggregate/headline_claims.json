@@ -1,0 +1,130 @@
+{
+  "AE_pct_in_top100": {
+    "A": 100.0,
+    "B": 60.0,
+    "C": 100.0,
+    "D": 100.0,
+    "E": 100.0
+  },
+  "n_descriptors": 15,
+  "n_folds_per_strategy": 15,
+  "spearman_rho_mean_by_strategy": {
+    "I": 0.9760832639407667,
+    "III": 0.9960272804774084,
+    "IIa": 0.9761917368153914,
+    "IIb": 0.9769912634895785
+  },
+  "spearman_rho_min_by_strategy": {
+    "I": 0.8754494858542083,
+    "III": 0.9771647789550605,
+    "IIa": 0.9224054916849164,
+    "IIb": 0.9218630844700868
+  },
+  "spearman_top100_mean_by_strategy": {
+    "I": 0.965002100210021,
+    "III": 0.9960272804774084,
+    "IIa": 0.9654845484548454,
+    "IIb": 0.9585198519851984
+  },
+  "spearman_top100_min_by_strategy": {
+    "I": 0.9074827482748274,
+    "III": 0.9771647789550605,
+    "IIa": 0.828070807080708,
+    "IIb": 0.8802640264026401
+  },
+  "strategies": [
+    "I",
+    "IIa",
+    "IIb",
+    "III"
+  ],
+  "strategy_summaries": {
+    "I": {
+      "baseline_filtered_n": 66,
+      "baseline_top_k_rows": 100,
+      "baseline_top_k_unique": 79,
+      "code_excel_filtered_n": 65,
+      "n_pool_full_csv": 28236,
+      "n_ranking_universe": 28236,
+      "note": "Baseline is recomputed 15-D Euclidean using the paper's hardcoded mean profile and full-CSV min-max scales; reproduces the historical CSV RefrigerantDistance (Tables S2-S5) to >=6 significant figures.",
+      "paper_filtered_n": 65,
+      "pool_path": "/export/home/shared/Projects/Manu22-23/MoleculeDifusion/RefrigerantFinding/refrigerant_finding/candidates/all_molecules_ranked.csv"
+    },
+    "III": {
+      "baseline_filtered_n": 23,
+      "baseline_top_k_rows": 69,
+      "baseline_top_k_unique": 57,
+      "code_excel_filtered_n": 23,
+      "n_pool_full_csv": 69,
+      "n_ranking_universe": 69,
+      "note": "Baseline is recomputed 15-D Euclidean using the paper's hardcoded mean profile and full-CSV min-max scales; reproduces the historical CSV RefrigerantDistance (Tables S2-S5) to >=6 significant figures.",
+      "paper_filtered_n": 23,
+      "pool_path": "/export/home/shared/Projects/Manu22-23/MoleculeDifusion/RefrigerantFinding/refrigerant_finding/candidates_refrigerantsmf/all_molecules_ranked.csv"
+    },
+    "IIa": {
+      "baseline_filtered_n": 56,
+      "baseline_top_k_rows": 100,
+      "baseline_top_k_unique": 69,
+      "code_excel_filtered_n": 56,
+      "n_pool_full_csv": 24230,
+      "n_ranking_universe": 24230,
+      "note": "Baseline is recomputed 15-D Euclidean using the paper's hardcoded mean profile and full-CSV min-max scales; reproduces the historical CSV RefrigerantDistance (Tables S2-S5) to >=6 significant figures.",
+      "paper_filtered_n": 56,
+      "pool_path": "/export/home/shared/Projects/Manu22-23/MoleculeDifusion/RefrigerantFinding/refrigerant_finding/candidates_novel/all_molecules_ranked.csv"
+    },
+    "IIb": {
+      "baseline_filtered_n": 84,
+      "baseline_top_k_rows": 100,
+      "baseline_top_k_unique": 84,
+      "code_excel_filtered_n": 84,
+      "n_pool_full_csv": 24230,
+      "n_ranking_universe": 10632,
+      "note": "Baseline is recomputed 15-D Euclidean using the paper's hardcoded mean profile and full-CSV min-max scales; reproduces the historical CSV RefrigerantDistance (Tables S2-S5) to >=6 significant figures.",
+      "paper_filtered_n": 64,
+      "pool_path": "/export/home/shared/Projects/Manu22-23/MoleculeDifusion/RefrigerantFinding/refrigerant_finding/candidates_novel_seguridad/all_molecules_ranked.csv"
+    }
+  },
+  "top100_retention_mean_by_strategy": {
+    "I": 0.9443037974683544,
+    "III": 1.0,
+    "IIa": 0.9458937198067633,
+    "IIb": 0.9182539682539682
+  },
+  "top_k": 100,
+  "worst_drop_by_strategy": {
+    "I": {
+      "descriptor": "NumRotatableBonds",
+      "spearman_rho": 0.8754494858542083
+    },
+    "III": {
+      "descriptor": "FpDensityMorgan3",
+      "spearman_rho": 0.9771647789550605
+    },
+    "IIa": {
+      "descriptor": "TPSA",
+      "spearman_rho": 0.9224054916849164
+    },
+    "IIb": {
+      "descriptor": "TPSA",
+      "spearman_rho": 0.9218630844700868
+    }
+  },
+  "worst_drop_top100_by_strategy": {
+    "I": {
+      "descriptor": "fr_alkyl_halide",
+      "spearman_rho_top100": 0.9074827482748274
+    },
+    "III": {
+      "descriptor": "FpDensityMorgan3",
+      "spearman_rho_top100": 0.9771647789550605
+    },
+    "IIa": {
+      "descriptor": "FpDensityMorgan3",
+      "spearman_rho_top100": 0.828070807080708
+    },
+    "IIb": {
+      "descriptor": "FpDensityMorgan3",
+      "spearman_rho_top100": 0.8802640264026401
+    }
+  }
+}

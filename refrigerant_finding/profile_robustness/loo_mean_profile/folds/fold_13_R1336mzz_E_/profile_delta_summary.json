@@ -1,0 +1,12 @@
+{
+  "argmax_abs_delta_normalized": "FpDensityMorgan3",
+  "fold_name": "fold_13_R1336mzz_E_",
+  "l2_delta_normalized": 0.022390510703414763,
+  "l2_delta_raw": 0.4347862736508473,
+  "left_out_compound": "R1336mzz(E)",
+  "left_out_refrigerant_id": "13_R1336mzz(E)",
+  "max_abs_delta_normalized": 0.015619405656999485,
+  "max_abs_delta_raw": 0.36527415858318335,
+  "mean_abs_delta_normalized": 0.004083970639150667,
+  "n_train": 20
+}

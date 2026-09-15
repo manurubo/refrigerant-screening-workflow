@@ -1,0 +1,134 @@
+{
+  "AE_baseline": [
+    {
+      "code": "B",
+      "distance": 0.3022507033450749,
+      "in_filtered": true,
+      "in_top100": true,
+      "rank": 96,
+      "rank_in_filtered": 62.0,
+      "strategy": "I"
+    },
+    {
+      "code": "D",
+      "distance": 0.3283186808146113,
+      "in_filtered": true,
+      "in_top100": true,
+      "rank": 54,
+      "rank_in_filtered": 26.0,
+      "strategy": "IIa"
+    },
+    {
+      "code": "E",
+      "distance": 0.4787497732174326,
+      "in_filtered": true,
+      "in_top100": true,
+      "rank": 45,
+      "rank_in_filtered": 35.0,
+      "strategy": "IIb"
+    },
+    {
+      "code": "A",
+      "distance": 0.4415327258831884,
+      "in_filtered": true,
+      "in_top100": true,
+      "rank": 36,
+      "rank_in_filtered": 17.0,
+      "strategy": "III"
+    },
+    {
+      "code": "C",
+      "distance": 0.2684760719748238,
+      "in_filtered": true,
+      "in_top100": true,
+      "rank": 12,
+      "rank_in_filtered": 5.0,
+      "strategy": "III"
+    }
+  ],
+  "n_folds": 21,
+  "paper_filtered_note": "Baseline uses CSV RefrigerantDistance (historical). I/IIa/III: top-100 \u2192 drop known refrigerants + dups \u2192 65/56/23. IIb (visualize_novel_molecules_grid.py): same novel CSV as IIa \u2192 keep PubChem-absent in rank order \u2192 top-100 \u2192 dedup \u2192 Excel 84 (paper cites 64). NOT IIa-handoff-then-PubChem (~17). LOO folds recompute distances; retention vs this baseline set.",
+  "retention_mean_filtered": {
+    "I": 0.9588744588744589,
+    "III": 1.0,
+    "IIa": 0.9413265306122449,
+    "IIb": 0.9070294784580499
+  },
+  "retention_mean_top100": {
+    "I": 0.9632308619650393,
+    "III": 1.0,
+    "IIa": 0.9516908212560387,
+    "IIb": 0.9070294784580499
+  },
+  "spearman_rho_mean_by_strategy": {
+    "I": 0.9992760320564562,
+    "III": 0.9960853906780104,
+    "IIa": 0.9983743894279413,
+    "IIb": 0.9874533188181157
+  },
+  "spearman_top100_mean_by_strategy": {
+    "I": 0.9724035260668923,
+    "III": 0.9960853906780104,
+    "IIa": 0.9688100238595286,
+    "IIb": 0.9670058434414868
+  },
+  "strategies": {
+    "I": {
+      "baseline_distance_source": "CSV RefrigerantDistance",
+      "baseline_filtered_n": 66,
+      "baseline_top_k_rows": 100,
+      "baseline_top_k_unique": 79,
+      "code_excel_filtered_n": 65,
+      "filtered_n_matches_code_excel": false,
+      "filtered_n_matches_paper": false,
+      "n_pool_full_csv": 28236,
+      "n_ranking_universe": 28236,
+      "paper_filtered_n": 65,
+      "pool_path": "/export/home/shared/Projects/Manu22-23/MoleculeDifusion/RefrigerantFinding/refrigerant_finding/candidates/all_molecules_ranked.csv",
+      "ranking_universe_note": "full ranked CSV (candidates + refrigerants present in file)"
+    },
+    "III": {
+      "baseline_distance_source": "CSV RefrigerantDistance",
+      "baseline_filtered_n": 23,
+      "baseline_top_k_rows": 69,
+      "baseline_top_k_unique": 57,
+      "code_excel_filtered_n": 23,
+      "filtered_n_matches_code_excel": true,
+      "filtered_n_matches_paper": true,
+      "n_pool_full_csv": 69,
+      "n_ranking_universe": 69,
+      "paper_filtered_n": 23,
+      "pool_path": "/export/home/shared/Projects/Manu22-23/MoleculeDifusion/RefrigerantFinding/refrigerant_finding/candidates_refrigerantsmf/all_molecules_ranked.csv",
+      "ranking_universe_note": "full ranked CSV (candidates + refrigerants present in file)"
+    },
+    "IIa": {
+      "baseline_distance_source": "CSV RefrigerantDistance",
+      "baseline_filtered_n": 56,
+      "baseline_top_k_rows": 100,
+      "baseline_top_k_unique": 69,
+      "code_excel_filtered_n": 56,
+      "filtered_n_matches_code_excel": true,
+      "filtered_n_matches_paper": true,
+      "n_pool_full_csv": 24230,
+      "n_ranking_universe": 24230,
+      "paper_filtered_n": 56,
+      "pool_path": "/export/home/shared/Projects/Manu22-23/MoleculeDifusion/RefrigerantFinding/refrigerant_finding/candidates_novel/all_molecules_ranked.csv",
+      "ranking_universe_note": "full ranked CSV (candidates + refrigerants present in file)"
+    },
+    "IIb": {
+      "baseline_distance_source": "CSV RefrigerantDistance",
+      "baseline_filtered_n": 84,
+      "baseline_top_k_rows": 100,
+      "baseline_top_k_unique": 84,
+      "code_excel_filtered_n": 84,
+      "filtered_n_matches_code_excel": true,
+      "filtered_n_matches_paper": false,
+      "n_pool_full_csv": 24230,
+      "n_ranking_universe": 10632,
+      "paper_filtered_n": 64,
+      "pool_path": "/export/home/shared/Projects/Manu22-23/MoleculeDifusion/RefrigerantFinding/refrigerant_finding/candidates_novel_seguridad/all_molecules_ranked.csv",
+      "ranking_universe_note": "PubChem-absent candidates in original novel-CSV rank order (visualize_novel_molecules_grid.py); NOT IIa-handoff\u2192PubChem"
+    }
+  },
+  "top_k": 100
+}

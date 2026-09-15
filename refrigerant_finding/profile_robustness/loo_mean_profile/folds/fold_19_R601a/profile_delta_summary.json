@@ -1,0 +1,12 @@
+{
+  "argmax_abs_delta_normalized": "MaxPartialCharge",
+  "fold_name": "fold_19_R601a",
+  "l2_delta_normalized": 0.09006215245503386,
+  "l2_delta_raw": 2.256803046904203,
+  "left_out_compound": "R601a",
+  "left_out_refrigerant_id": "19_R601a",
+  "max_abs_delta_normalized": 0.0344162304499509,
+  "max_abs_delta_raw": 2.0106491585831847,
+  "mean_abs_delta_normalized": 0.019937384123678157,
+  "n_train": 20
+}

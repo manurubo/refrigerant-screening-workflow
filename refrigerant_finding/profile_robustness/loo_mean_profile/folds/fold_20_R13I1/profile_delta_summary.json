@@ -1,0 +1,12 @@
+{
+  "argmax_abs_delta_normalized": "FpDensityMorgan3",
+  "fold_name": "fold_20_R13I1",
+  "l2_delta_normalized": 0.020757872420453554,
+  "l2_delta_raw": 0.6938359778158381,
+  "left_out_compound": "R13I1",
+  "left_out_refrigerant_id": "20_R13I1",
+  "max_abs_delta_normalized": 0.011448263515932866,
+  "max_abs_delta_raw": 0.6610241585831886,
+  "mean_abs_delta_normalized": 0.004109715476801453,
+  "n_train": 20
+}

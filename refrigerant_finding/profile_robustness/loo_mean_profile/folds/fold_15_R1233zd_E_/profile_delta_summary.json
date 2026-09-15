@@ -1,0 +1,12 @@
+{
+  "argmax_abs_delta_normalized": "FpDensityMorgan3",
+  "fold_name": "fold_15_R1233zd_E_",
+  "l2_delta_normalized": 0.023162495156842326,
+  "l2_delta_raw": 0.49018351625123924,
+  "left_out_compound": "R1233zd(E)",
+  "left_out_refrigerant_id": "15_R1233zd(E)",
+  "max_abs_delta_normalized": 0.015619405656999485,
+  "max_abs_delta_raw": 0.3779408252498513,
+  "mean_abs_delta_normalized": 0.004315221726689628,
+  "n_train": 20
+}

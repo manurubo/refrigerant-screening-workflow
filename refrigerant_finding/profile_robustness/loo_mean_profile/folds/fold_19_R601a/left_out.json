@@ -1,0 +1,8 @@
+{
+  "fold_name": "fold_19_R601a",
+  "left_out_compound": "R601a",
+  "left_out_refrigerant_id": "19_R601a",
+  "left_out_refrigerant_index": 19,
+  "left_out_smiles": "CC(C)CC",
+  "n_train_refrigerants": 20
+}

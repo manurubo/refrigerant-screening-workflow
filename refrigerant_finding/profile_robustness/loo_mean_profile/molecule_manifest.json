@@ -1,0 +1,153 @@
+{
+  "n_refrigerants": 21,
+  "note": "Same 21 size-matched profile fluids as loo_on_profile/molecule_manifest.json (refrigerant rows only).",
+  "refrigerants": [
+    {
+      "HeavyAtomCount": 5,
+      "compound": "R134a",
+      "refrigerant_id": "00_R134a",
+      "refrigerant_index": 0,
+      "smiles": "C(F)(F)(F)F"
+    },
+    {
+      "HeavyAtomCount": 7,
+      "compound": "R125",
+      "refrigerant_id": "01_R125",
+      "refrigerant_index": 1,
+      "smiles": "C(C(F)(F)F)(F)F"
+    },
+    {
+      "HeavyAtomCount": 8,
+      "compound": "R245fa",
+      "refrigerant_id": "02_R245fa",
+      "refrigerant_index": 2,
+      "smiles": "C(C(F)F)C(F)(F)F"
+    },
+    {
+      "HeavyAtomCount": 6,
+      "compound": "R236fa",
+      "refrigerant_id": "03_R236fa",
+      "refrigerant_index": 3,
+      "smiles": "C(C(F)(F)F)C (F)(F)F"
+    },
+    {
+      "HeavyAtomCount": 10,
+      "compound": "R227ea",
+      "refrigerant_id": "04_R227ea",
+      "refrigerant_index": 4,
+      "smiles": "C(C(F)(F)F)(C(F)(F)F)F"
+    },
+    {
+      "HeavyAtomCount": 5,
+      "compound": "R1123",
+      "refrigerant_id": "05_R1123",
+      "refrigerant_index": 5,
+      "smiles": "FC=C(F)F"
+    },
+    {
+      "HeavyAtomCount": 6,
+      "compound": "R1243zf",
+      "refrigerant_id": "06_R1243zf",
+      "refrigerant_index": 6,
+      "smiles": "C=CC(F)(F)F"
+    },
+    {
+      "HeavyAtomCount": 7,
+      "compound": "R1234yf",
+      "refrigerant_id": "07_R1234yf",
+      "refrigerant_index": 7,
+      "smiles": "C=C(C(F)(F)F)F"
+    },
+    {
+      "HeavyAtomCount": 7,
+      "compound": "R1234ze(E)",
+      "refrigerant_id": "08_R1234ze(E)",
+      "refrigerant_index": 8,
+      "smiles": "C(=CF)C(F)(F)F"
+    },
+    {
+      "HeavyAtomCount": 8,
+      "compound": "R1225ye(Z)",
+      "refrigerant_id": "09_R1225ye(Z)",
+      "refrigerant_index": 9,
+      "smiles": "C(=C(C(F)(F)F)F)F"
+    },
+    {
+      "HeavyAtomCount": 6,
+      "compound": "R1336mzz(Z)",
+      "refrigerant_id": "10_R1336mzz(Z)",
+      "refrigerant_index": 10,
+      "smiles": "C(=CC(F)(F)F) C(F)(F)F"
+    },
+    {
+      "HeavyAtomCount": 7,
+      "compound": "R1234ze(Z)",
+      "refrigerant_id": "11_R1234ze(Z)",
+      "refrigerant_index": 11,
+      "smiles": "C(=CF)C(F)(F)F"
+    },
+    {
+      "HeavyAtomCount": 10,
+      "compound": "R1345fz",
+      "refrigerant_id": "12_R1345fz",
+      "refrigerant_index": 12,
+      "smiles": "C=C(C(F)(F)F)C(F)(F)F"
+    },
+    {
+      "HeavyAtomCount": 7,
+      "compound": "R1336mzz(E)",
+      "refrigerant_id": "13_R1336mzz(E)",
+      "refrigerant_index": 13,
+      "smiles": "C(=CC(F)(F)F)C (F)(F)F"
+    },
+    {
+      "HeavyAtomCount": 10,
+      "compound": "R1336yf",
+      "refrigerant_id": "14_R1336yf",
+      "refrigerant_index": 14,
+      "smiles": "C=C(C(F)(F)F)C(F)(F)F"
+    },
+    {
+      "HeavyAtomCount": 7,
+      "compound": "R1233zd(E)",
+      "refrigerant_id": "15_R1233zd(E)",
+      "refrigerant_index": 15,
+      "smiles": "C(=CCl)C(F)(F)F"
+    },
+    {
+      "HeavyAtomCount": 8,
+      "compound": "R1224yd(Z)",
+      "refrigerant_id": "16_R1224yd(Z)",
+      "refrigerant_index": 16,
+      "smiles": "C(\\C(F)(F)F)=C(\\Cl)F"
+    },
+    {
+      "HeavyAtomCount": 8,
+      "compound": "R1224yd(E)",
+      "refrigerant_id": "17_R1224yd(E)",
+      "refrigerant_index": 17,
+      "smiles": "C(\\C(F)(F)F)=C(/F)\\Cl"
+    },
+    {
+      "HeavyAtomCount": 5,
+      "compound": "R601",
+      "refrigerant_id": "18_R601",
+      "refrigerant_index": 18,
+      "smiles": "CCCCC"
+    },
+    {
+      "HeavyAtomCount": 5,
+      "compound": "R601a",
+      "refrigerant_id": "19_R601a",
+      "refrigerant_index": 19,
+      "smiles": "CC(C)CC"
+    },
+    {
+      "HeavyAtomCount": 5,
+      "compound": "R13I1",
+      "refrigerant_id": "20_R13I1",
+      "refrigerant_index": 20,
+      "smiles": "C(F)(F)(F)I"
+    }
+  ]
+}

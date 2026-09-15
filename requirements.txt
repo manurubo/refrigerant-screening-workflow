@@ -1,0 +1,8 @@
+pandas
+numpy
+scipy
+rdkit
+tqdm
+matplotlib
+seaborn
+tableone

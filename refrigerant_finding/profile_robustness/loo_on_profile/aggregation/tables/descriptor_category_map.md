@@ -1,0 +1,69 @@
+| Feature | category | category_short | role | in_fixed15 | in_near_substitutes |
+| --- | --- | --- | --- | --- | --- |
+| MaxPartialCharge | Electronic | Electronic | fixed-15 | True | False |
+| MinEStateIndex | Electronic | Electronic | fixed-15 | True | False |
+| MinPartialCharge | Electronic | Electronic | fixed-15 | True | False |
+| BCUT2D_CHGHI | Electronic | Electronic | near-substitute | False | True |
+| MaxAbsEStateIndex | Electronic | Electronic | near-substitute | False | True |
+| MaxEStateIndex | Electronic | Electronic | near-substitute | False | True |
+| PEOE_VSA1 | Electronic | Electronic | near-substitute | False | True |
+| PEOE_VSA14 | Electronic | Electronic | near-substitute | False | True |
+| PEOE_VSA4 | Electronic | Electronic | near-substitute | False | True |
+| PEOE_VSA7 | Electronic | Electronic | near-substitute | False | True |
+| SMR_VSA1 | Surface area | Surface | fixed-15 | True | False |
+| TPSA | Surface area | Surface | fixed-15 | True | False |
+| VSA_EState1 | Surface area | Surface | fixed-15 | True | False |
+| LabuteASA | Surface area | Surface | fixed-15 | True | False |
+| EState_VSA1 | Surface area | Surface | near-substitute | False | True |
+| EState_VSA10 | Surface area | Surface | near-substitute | False | True |
+| EState_VSA6 | Surface area | Surface | near-substitute | False | True |
+| EState_VSA8 | Surface area | Surface | near-substitute | False | True |
+| EState_VSA9 | Surface area | Surface | near-substitute | False | True |
+| SMR_VSA10 | Surface area | Surface | near-substitute | False | True |
+| SMR_VSA6 | Surface area | Surface | near-substitute | False | True |
+| VSA_EState2 | Surface area | Surface | near-substitute | False | True |
+| VSA_EState3 | Surface area | Surface | near-substitute | False | True |
+| VSA_EState7 | Surface area | Surface | near-substitute | False | True |
+| NumHAcceptors | Pharmacophore / polarity | Polarity | fixed-15 | True | False |
+| NumRotatableBonds | Pharmacophore / polarity | Polarity | fixed-15 | True | False |
+| NHOHCount | Pharmacophore / polarity | Polarity | near-substitute | False | True |
+| NOCount | Pharmacophore / polarity | Polarity | near-substitute | False | True |
+| NumHDonors | Pharmacophore / polarity | Polarity | near-substitute | False | True |
+| MolLogP | Lipophilicity | Lipophilicity | fixed-15 | True | False |
+| BCUT2D_LOGPHI | Lipophilicity | Lipophilicity | near-substitute | False | True |
+| SlogP_VSA10 | Lipophilicity | Lipophilicity | near-substitute | False | True |
+| SlogP_VSA2 | Lipophilicity | Lipophilicity | near-substitute | False | True |
+| SlogP_VSA3 | Lipophilicity | Lipophilicity | near-substitute | False | True |
+| SlogP_VSA5 | Lipophilicity | Lipophilicity | near-substitute | False | True |
+| fr_halogen | Halogen | Halogen | fixed-15 | True | False |
+| fr_alkyl_halide | Halogen | Halogen | fixed-15 | True | False |
+| NumHeteroatoms | Size / composition | Size | fixed-15 | True | False |
+| BCUT2D_MWHI | Size / composition | Size | near-substitute | False | True |
+| BCUT2D_MWLOW | Size / composition | Size | near-substitute | False | True |
+| HeavyAtomCount | Size / composition | Size | near-substitute | False | True |
+| NumValenceElectrons | Size / composition | Size | near-substitute | False | True |
+| AvgIpc | Topology | Topology | near-substitute | False | True |
+| BalabanJ | Topology | Topology | near-substitute | False | True |
+| BertzCT | Topology | Topology | near-substitute | False | True |
+| Chi0 | Topology | Topology | near-substitute | False | True |
+| Chi0n | Topology | Topology | near-substitute | False | True |
+| Chi0v | Topology | Topology | near-substitute | False | True |
+| Chi1 | Topology | Topology | near-substitute | False | True |
+| Chi1n | Topology | Topology | near-substitute | False | True |
+| Chi1v | Topology | Topology | near-substitute | False | True |
+| Chi2n | Topology | Topology | near-substitute | False | True |
+| Chi2v | Topology | Topology | near-substitute | False | True |
+| Chi3n | Topology | Topology | near-substitute | False | True |
+| Chi3v | Topology | Topology | near-substitute | False | True |
+| Chi4n | Topology | Topology | near-substitute | False | True |
+| Chi4v | Topology | Topology | near-substitute | False | True |
+| Ipc | Topology | Topology | near-substitute | False | True |
+| Kappa2 | Topology | Topology | near-substitute | False | True |
+| RingCount | Topology | Topology | near-substitute | False | True |
+| MolMR | Structural complexity | Complexity | fixed-15 | True | False |
+| FpDensityMorgan3 | Structural complexity | Complexity | fixed-15 | True | False |
+| BCUT2D_MRHI | Structural complexity | Complexity | near-substitute | False | True |
+| BCUT2D_MRLOW | Structural complexity | Complexity | near-substitute | False | True |
+| FpDensityMorgan1 | Structural complexity | Complexity | near-substitute | False | True |
+| FpDensityMorgan2 | Structural complexity | Complexity | near-substitute | False | True |
+| qed | Structural complexity | Complexity | near-substitute | False | True |

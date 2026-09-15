@@ -1,0 +1,8 @@
+{
+  "fold_name": "fold_02_R245fa",
+  "left_out_compound": "R245fa",
+  "left_out_refrigerant_id": "02_R245fa",
+  "left_out_refrigerant_index": 2,
+  "left_out_smiles": "C(C(F)F)C(F)(F)F",
+  "n_train_refrigerants": 20
+}

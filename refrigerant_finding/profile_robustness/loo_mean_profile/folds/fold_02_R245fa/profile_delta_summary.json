@@ -1,0 +1,12 @@
+{
+  "argmax_abs_delta_normalized": "NumRotatableBonds",
+  "fold_name": "fold_02_R245fa",
+  "l2_delta_normalized": 0.03215005037684064,
+  "l2_delta_raw": 0.7718635799024538,
+  "left_out_compound": "R245fa",
+  "left_out_refrigerant_id": "02_R245fa",
+  "max_abs_delta_normalized": 0.020238095238095236,
+  "max_abs_delta_raw": 0.6943855636390381,
+  "mean_abs_delta_normalized": 0.006557655110599051,
+  "n_train": 20
+}

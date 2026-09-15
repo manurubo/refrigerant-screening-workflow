@@ -1,0 +1,12 @@
+{
+  "argmax_abs_delta_normalized": "fr_alkyl_halide",
+  "fold_name": "fold_05_R1123",
+  "l2_delta_normalized": 0.04840183363993457,
+  "l2_delta_raw": 0.8887152487662069,
+  "left_out_compound": "R1123",
+  "left_out_refrigerant_id": "05_R1123",
+  "max_abs_delta_normalized": 0.02380952380952378,
+  "max_abs_delta_raw": 0.6246803667207388,
+  "mean_abs_delta_normalized": 0.01013913847609506,
+  "n_train": 20
+}

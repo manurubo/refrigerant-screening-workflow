@@ -1,0 +1,12 @@
+{
+  "argmax_abs_delta_normalized": "FpDensityMorgan3",
+  "fold_name": "fold_00_R134a",
+  "l2_delta_normalized": 0.06216006221945405,
+  "l2_delta_raw": 0.8909716367065983,
+  "left_out_compound": "R134a",
+  "left_out_refrigerant_id": "00_R134a",
+  "max_abs_delta_normalized": 0.03250089509488008,
+  "max_abs_delta_raw": 0.7001705506850371,
+  "mean_abs_delta_normalized": 0.01096793787223402,
+  "n_train": 20
+}

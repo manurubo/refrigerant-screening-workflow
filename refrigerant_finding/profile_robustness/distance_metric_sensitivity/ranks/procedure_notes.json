@@ -1,0 +1,19 @@
+{
+  "alternative_metrics": [
+    "manhattan",
+    "cosine",
+    "chebyshev"
+  ],
+  "baseline_metric": "euclidean",
+  "cosine_definition": "distance = 1 \u2212 cosine_similarity",
+  "experiment": "Re-rank strategy pools under alternative distances to the paper's hardcoded mean profile (PAPER_HARDCODED_MEANS) in the same min\u2013max\u2013normalized 15-D space (scales from the full unfiltered per-strategy CSV, reproducing the published screening pipeline). Compare each alternative to Euclidean.",
+  "mean_profile": "PAPER_HARDCODED_MEANS (historical screening-pipeline snapshot, not recomputed from the 21 profile fluids)",
+  "metrics_reported": [
+    "Spearman \u03c1 (full universe) vs Euclidean",
+    "Spearman \u03c1 among Euclidean baseline top-100 rows",
+    "top-100 unique-SMILES retention vs Euclidean",
+    "Thermo-filtered retention vs Euclidean",
+    "A\u2013E ranks under each metric"
+  ],
+  "scale_mode": "min\u2013max on the full, unfiltered all_molecules_ranked.csv per strategy (paper-consistent)"
+}

@@ -1,0 +1,13 @@
+,,Grouped by category,Grouped by category,Grouped by category,Grouped by category,Grouped by category
+,,Missing,Overall,database_size_matched,refrigerant,P-Value
+n,,,198,177,21,
+"fr_sulfide, mean (SD)",,0,0.1 (0.3),0.1 (0.3),0.0 (0.0),0.002
+"fr_sulfonamd, mean (SD)",,0,0.0 (0.0),0.0 (0.0),0.0 (0.0),nan
+"fr_sulfone, mean (SD)",,0,0.0 (0.1),0.0 (0.1),0.0 (0.0),0.158
+"fr_term_acetylene, mean (SD)",,0,0.0 (0.1),0.0 (0.1),0.0 (0.0),0.158
+"fr_tetrazole, mean (SD)",,0,0.0 (0.1),0.0 (0.1),0.0 (0.0),0.158
+"fr_thiazole, mean (SD)",,0,0.0 (0.1),0.0 (0.1),0.0 (0.0),0.158
+"fr_thiocyan, mean (SD)",,0,0.0 (0.0),0.0 (0.0),0.0 (0.0),nan
+"fr_thiophene, mean (SD)",,0,0.0 (0.0),0.0 (0.0),0.0 (0.0),nan
+"fr_unbrch_alkane, mean (SD)",,0,0.1 (0.5),0.1 (0.5),0.0 (0.0),0.009
+"fr_urea, mean (SD)",,0,0.0 (0.1),0.0 (0.1),0.0 (0.0),0.083

@@ -1,0 +1,8 @@
+{
+  "fold_name": "fold_14_R1336yf",
+  "left_out_compound": "R1336yf",
+  "left_out_refrigerant_id": "14_R1336yf",
+  "left_out_refrigerant_index": 14,
+  "left_out_smiles": "C=C(C(F)(F)F)C(F)(F)F",
+  "n_train_refrigerants": 20
+}

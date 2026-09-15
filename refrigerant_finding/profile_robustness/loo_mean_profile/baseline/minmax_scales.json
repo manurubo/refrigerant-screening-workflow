@@ -1,0 +1,62 @@
+{
+  "FpDensityMorgan3": {
+    "max": 1.75,
+    "min": 0.8
+  },
+  "LabuteASA": {
+    "max": 52.13768675639253,
+    "min": 25.40139263953448
+  },
+  "MaxPartialCharge": {
+    "max": 0.5594364844715236,
+    "min": -0.0538313154318367
+  },
+  "MinEStateIndex": {
+    "max": 1.34375,
+    "min": -5.848958333333333
+  },
+  "MinPartialCharge": {
+    "max": -0.0651384089973608,
+    "min": -0.2272082222648216
+  },
+  "MolLogP": {
+    "max": 2.6672,
+    "min": 1.4756999999999998
+  },
+  "MolMR": {
+    "max": 25.19899999999999,
+    "min": 7.163
+  },
+  "NumHAcceptors": {
+    "max": 0.0,
+    "min": 0.0
+  },
+  "NumHeteroatoms": {
+    "max": 7.0,
+    "min": 0.0
+  },
+  "NumRotatableBonds": {
+    "max": 2.0,
+    "min": 0.0
+  },
+  "SMR_VSA1": {
+    "max": 30.732905333723743,
+    "min": 0.0
+  },
+  "TPSA": {
+    "max": 0.0,
+    "min": 0.0
+  },
+  "VSA_EState1": {
+    "max": 76.26736111111111,
+    "min": 0.0
+  },
+  "fr_alkyl_halide": {
+    "max": 7.0,
+    "min": 0.0
+  },
+  "fr_halogen": {
+    "max": 7.0,
+    "min": 0.0
+  }
+}
