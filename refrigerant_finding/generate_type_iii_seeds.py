@@ -108,7 +108,7 @@ def main() -> None:
     print(
         "\nThe generated SMILES can then be ranked with "
         "find_refrigerant_candidates.py --database_file <generated.csv> "
-        "--output_dir refrigerant_finding/candidates_refrigerantsmf"
+        "--output_dir refrigerant_finding/candidates_type_iii_formula_matched"
     )
 
 

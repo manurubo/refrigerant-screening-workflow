@@ -1,152 +1,167 @@
-# Refrigerant screening workflow
+# Working-Fluid Screening Workflow
 
-Companion code and data for the downstream working-fluid screening pipeline
-described in the manuscript. It reproduces candidate generation *queries*,
-descriptor computation, ranking, filtering, and the published top-candidate
-lists.
+Companion code and data for the downstream working-fluid screening pipeline described in the manuscript. It reproduces candidate generation *queries*, RDKit physicochemical descriptor computation, ranking against the 15-descriptor refrigerant profile, post-filtering, and the published candidate lists.
 
-The generative model itself is **not** in this repository. CoCoGraph is
-released separately at [https://github.com/seeslab/cocograph](https://github.com/seeslab/cocograph), including its
-training/sampling code and the 8.2-million-molecule generated database used
-for type II candidates.
+The generative model itself is released separately at [https://github.com/seeslab/cocograph](https://github.com/seeslab/cocograph), including its training/sampling code and the 8.2-million-molecule generated database used for type II candidates.
 
-## What is included
+---
 
-| Piece | Location |
-| --- | --- |
-| Known working fluids (38) | `refrigerant_finding/refrigerants.csv` |
-| 15-descriptor profile (means used for ranking) | `refrigerant_finding/REFRIGERANT_PROPERTIES.md` |
-| Descriptor computation + Jensen–Shannon selection | `refrigerant_finding/refrigerant_comparison.py` |
-| Size-matched 21 + 177 descriptor table | `refrigerant_finding/statistical_comparison/` |
-| Ranking / filtering against the mean profile | `refrigerant_finding/find_refrigerant_candidates.py`, `extract_properties.py` |
-| Type III seed SMILES (formula-matched generation) | `refrigerant_finding/generate_type_iii_seeds.py` |
-| Ranked pools and filtered top lists | `refrigerant_finding/candidates*/` (see below) |
-| SI robustness analyses | `refrigerant_finding/profile_robustness/` |
+## 1. Directory & Data Structure
 
-## Candidate pools (types I–III)
-
-| Type | Source | Directory | Filtered list |
-| --- | --- | --- | --- |
-| I | CoCoGraph training database (2.25 M) | `candidates/` | 65 molecules |
-| IIa | Generated database, present in PubChem | `candidates_novel/` | 56 molecules |
-| IIb | Generated database, absent from PubChem | `candidates_novel_seguridad/` | 84 molecules |
-| III | Formula-matched CoCoGraph generation | `candidates_refrigerantsmf/` | 23 molecules |
-
-Each pool ships `all_molecules_ranked.csv` (ranking universe) and
-`top_*.csv`. The post-filter lists used in the SI (known working fluids and
-duplicate canonical SMILES removed) are also in
-
-`profile_robustness/loo_mean_profile/ranks/strategy_*/baseline_filtered.csv`.
-
-Type IIb ranking needs the PubChem-absent subset of the type II universe.
-That subset is shipped as
-`candidates_novel_seguridad/iib_pubchem_absent_candidate_smiles.txt`
-so the multi-gigabyte PubChem dump is not required.
-
-## External data you still need from CoCoGraph
-
-Place (or symlink) the CoCoGraph training SMILES table as
-`molecular_formulas.csv` in the repository root, **or** pass
-`--database_file` / `--molecular-formulas` explicitly.
-
-Typical paper settings for the size-matched profile:
-
-```bash
-python refrigerant_finding/refrigerant_comparison.py \
-  --size_match --atom_range 5 10 --n_samples 10000 --size_buffer 1.0 \
-  --database_file /path/to/molecules_lt70atoms_annotated.csv
+```
+.
+├── README.md                                     <- Top-level workflow guide (this file)
+├── LICENSE                                       <- MIT License
+├── requirements.txt                              <- Python dependencies
+└── refrigerant_finding/
+    ├── refrigerants.csv                          <- 38 known working fluids (ASHRAE reference)
+    ├── refrigerants_extra.csv                    <- Additional working fluids
+    ├── REFRIGERANT_PROPERTIES.md                 <- Curated 15-D profile target values
+    │
+    ├── statistical_comparison/                   <- Profiling & reference data
+    │   ├── combined_descriptors.csv              <- 170 RDKit descriptors for 21 size-matched
+    │   │                                            fluids + 177 size-matched reference molecules
+    │   └── js_distances_ranked*.csv              <- Jensen–Shannon distances for descriptor selection
+    │
+    ├── candidates_type_i_training_db/            <- Strategy I candidate pool (training DB universe)
+    │   ├── all_molecules_ranked.csv              <- Ranked universe (28,236 molecules)
+    │   ├── top_100_molecules.csv                 <- Top 100 closest to refrigerant profile
+    │   └── canonicalized_molecules_properties.csv<- 65 filtered candidates (passed to thermo analysis)
+    │
+    ├── candidates_type_iia_generated_pubchem/    <- Strategy IIa candidate pool (generated, in PubChem)
+    │   ├── all_molecules_ranked.csv              <- Ranked universe (24,230 molecules)
+    │   ├── top_100_molecules.csv                 <- Top 100 closest to refrigerant profile
+    │   └── canonicalized_molecules_properties.csv<- 56 filtered candidates (passed to thermo analysis)
+    │
+    ├── candidates_type_iib_generated_novel/      <- Strategy IIb candidate pool (generated, novel / absent PubChem)
+    │   ├── all_molecules_ranked.csv              <- Symlink to type II ranking universe
+    │   └── iib_pubchem_absent_candidate_smiles.txt <- PubChem-absent subset cache (10,632 molecules; 84 filtered)
+    │
+    ├── candidates_type_iii_formula_matched/      <- Strategy III candidate pool (formula-matched CoCoGraph)
+    │   ├── all_molecules_ranked.csv              <- Ranked universe (69 molecules)
+    │   ├── top_100_molecules.csv                 <- Top closest molecules
+    │   └── canonicalized_molecules_properties_69.csv <- 23 filtered candidates (passed to thermo analysis)
+    │
+    ├── refrigerant_comparison.py                 <- Descriptor computation & Jensen–Shannon ranking
+    ├── find_refrigerant_candidates.py            <- Euclidean distance ranking against 15-D profile
+    ├── extract_properties.py                     <- Deduplication & known-fluid filtering
+    ├── generate_type_iii_seeds.py                <- 21 size-matched seeds for CoCoGraph type III sampling
+    └── profile_robustness/                       <- Comprehensive SI sensitivity & robustness analyses
+        ├── loo_descriptor_metrics.py             <- Leave-one-out on profile fluids (JS distance / MW test)
+        ├── loo_mean_profile_ranks.py             <- LOO mean profile re-ranking across all strategies
+        ├── loo_descriptor_ablation_ranks.py      <- 15-D descriptor ablation (leave-one-descriptor-out)
+        ├── distance_metric_sensitivity_ranks.py  <- Metric sensitivity (Euclidean vs L1 vs Cosine vs Chebyshev)
+        └── resample_reference_metrics.py         <- Reference set bootstrap & redraw robustness
 ```
 
-Type I / II ranking against the published 15-D profile:
+---
 
-```bash
-python refrigerant_finding/find_refrigerant_candidates.py \
-  --database_file /path/to/database.csv \
-  --use_calculated_means \
-  --min_atoms 5 --max_atoms 10 --n_candidates 100 \
-  --output_dir refrigerant_finding/candidates
-```
+## 2. Published Candidate Pools (Strategies I–III)
 
-Omit `--use_calculated_means` to rank with the documented profile means in
-`REFRIGERANT_PROPERTIES.md` (this is what produced the published distances).
+| Strategy | Candidate Source | Directory | Published Filtered List | Focal Molecule |
+|---|---|---|---|---|
+| **Type I** | CoCoGraph training database (2.25 M) | `refrigerant_finding/candidates_type_i_training_db/` | 65 molecules | Compound B (`R245cb`) |
+| **Type IIa** | Generated database, present in PubChem | `refrigerant_finding/candidates_type_iia_generated_pubchem/` | 56 molecules | Compound D (`CF3CBr2H`) |
+| **Type IIb** | Generated database, novel / absent from PubChem | `refrigerant_finding/candidates_type_iib_generated_novel/` | 84 (64 in paper text) | Compound E (`CH3NFCHFBr`) |
+| **Type III** | Formula-matched CoCoGraph generation | `refrigerant_finding/candidates_type_iii_formula_matched/` | 23 molecules | Compounds A & C |
 
-Drop known working fluids and duplicate canonical SMILES from a top-100
-table:
+Each candidate directory ships the full ranking universe (`all_molecules_ranked.csv`), the `top_100_molecules.csv`, and the post-filter candidate properties passed to thermodynamic evaluation.
 
-```bash
-python refrigerant_finding/extract_properties.py \
-  --csv_file refrigerant_finding/candidates/top_100_molecules.csv \
-  --output_dir refrigerant_finding/candidates
-```
+---
 
-## Type III generation
+## 3. Installation & Quick Verification
 
-Write the 21 size-matched seed SMILES, then run CoCoGraph (not this repo):
-
-```bash
-python refrigerant_finding/generate_type_iii_seeds.py \
-  --cocograph-root /path/to/cocograph
-```
-
-The printed command calls CoCoGraph's FPS sampler with those seeds, which
-preserves each working-fluid molecular formula. Rank the generated SMILES
-with `find_refrigerant_candidates.py` as above, using
-`--output_dir refrigerant_finding/candidates_refrigerantsmf`.
-
-## Robustness (SI §S1.3)
-
-```bash
-python refrigerant_finding/profile_robustness/loo_descriptor_metrics.py
-python refrigerant_finding/profile_robustness/loo_mean_profile_ranks.py
-python refrigerant_finding/profile_robustness/loo_descriptor_ablation_ranks.py
-python refrigerant_finding/profile_robustness/distance_metric_sensitivity_ranks.py
-python refrigerant_finding/profile_robustness/resample_reference_metrics.py --mode bootstrap --n-replicates 50
-```
-
-## Requirements
-
+### Requirements
 ```bash
 pip install -r requirements.txt
 ```
 
-Run scripts from the repository root. RDKit is required for descriptor
-computation and ranking; the robustness re-ranking steps can reuse the
-shipped CSVs without regenerating the CoCoGraph databases.
-
-## Repository map
-
-Git tracks the screening workflow only. Paper materials, figure scripts, and
-CoCoGraph remain on disk locally but are gitignored.
-
+### Quick Verification (10 seconds)
+Verify that the screening and sensitivity pipelines run correctly and reproduce published baseline values:
+```bash
+python3 refrigerant_finding/profile_robustness/loo_mean_profile_ranks.py --stage both
 ```
-.                               tracked
-├── README.md                   yes  (this file)
-├── LICENSE                     yes
-├── requirements.txt            yes
-├── cocograph/                  no   (https://github.com/seeslab/cocograph)
-├── molecular_formulas.csv      no   (CoCoGraph training SMILES; pass --database_file)
-└── refrigerant_finding/
-    ├── refrigerant_comparison.py         yes
-    ├── find_refrigerant_candidates.py    yes
-    ├── extract_properties.py             yes
-    ├── generate_type_iii_seeds.py        yes
-    ├── refrigerants.csv                  yes  (38 fluids)
-    ├── REFRIGERANT_PROPERTIES.md         yes  (15-D means)
-    ├── statistical_comparison/*.csv      yes  (plots/ excluded)
-    ├── candidates/                       yes  type I CSVs (PNG/XLSX excluded)
-    ├── candidates_novel/                 yes  type IIa CSVs
-    ├── candidates_novel_seguridad/       yes  type IIb cache + ranked symlink
-    ├── candidates_refrigerantsmf/        yes  type III CSVs
-    ├── profile_robustness/               yes  analysis scripts + tables
-    │                                      no   plot_*.py, figures/, SI tex
-    ├── paper_final/                      no
-    ├── create_paper_figures*.py          no
-    ├── visualize_*.py                    no
-    ├── candidates_generated*/            no   unpublished dumps
-    ├── third_party/, synthesizability/   no
-    └── find_melting_points*              no
+
+---
+
+## 4. Step-by-Step Screening Workflow
+
+All commands are run from the repository root.
+
+### Step 1: Compute Descriptors & Size-Matched Profiling
+Compare known working fluids against database molecules to identify the most discriminative physicochemical descriptors via Jensen–Shannon divergence:
+
+```bash
+python3 refrigerant_finding/refrigerant_comparison.py \
+  --size_match \
+  --atom_range 5 10 \
+  --n_samples 10000 \
+  --size_buffer 1.0 \
+  --database_file /path/to/molecules_lt70atoms_annotated.csv
 ```
+
+### Step 2: Rank Candidates against the 15-Descriptor Refrigerant Profile
+Rank any molecular database (Type I or Type II) against the curated working-fluid profile:
+
+```bash
+# Type I ranking
+python3 refrigerant_finding/find_refrigerant_candidates.py \
+  --database_file /path/to/training_database.csv \
+  --min_atoms 5 --max_atoms 10 --n_candidates 100 \
+  --output_dir refrigerant_finding/candidates_type_i_training_db
+
+# Type II ranking
+python3 refrigerant_finding/find_refrigerant_candidates.py \
+  --database_file /path/to/generated_8M_database.csv \
+  --min_atoms 5 --max_atoms 10 --n_candidates 100 \
+  --output_dir refrigerant_finding/candidates_type_iia_generated_pubchem
+```
+*(Omit `--use_calculated_means` to rank using the documented target means in `REFRIGERANT_PROPERTIES.md`, which reproduced published distances).*
+
+### Step 3: Filter Known Working Fluids & Duplicates
+Extract canonical properties from the top-100 list, dropping known refrigerants and duplicate canonical SMILES:
+
+```bash
+python3 refrigerant_finding/extract_properties.py \
+  --csv_file refrigerant_finding/candidates_type_i_training_db/top_100_molecules.csv \
+  --output_dir refrigerant_finding/candidates_type_i_training_db \
+  --output_file canonicalized_molecules_properties.csv
+```
+
+### Step 4: Formula-Matched (Type III) Generation
+Write the 21 size-matched working-fluid seed SMILES for CoCoGraph:
+
+```bash
+python3 refrigerant_finding/generate_type_iii_seeds.py \
+  --cocograph-root /path/to/cocograph
+```
+Then run CoCoGraph's FPS diffusion sampler using the command printed by the script, and rank the resulting molecules into `refrigerant_finding/candidates_type_iii_formula_matched/`.
+
+---
+
+## 5. Supplementary Information Robustness Analyses (SI §S1.3)
+
+All robustness experiments can be reproduced immediately using the shipped data tables without needing to re-download the multi-gigabyte databases:
+
+```bash
+# 1. Leave-one-out descriptor selection stability (JS distances & Mann–Whitney tests)
+python3 refrigerant_finding/profile_robustness/loo_descriptor_metrics.py
+
+# 2. Leave-one-out profile fluid re-ranking & retention across Strategies I–III
+python3 refrigerant_finding/profile_robustness/loo_mean_profile_ranks.py --stage both
+
+# 3. Leave-one-descriptor-out ablation across Strategies I–III
+python3 refrigerant_finding/profile_robustness/loo_descriptor_ablation_ranks.py
+
+# 4. Sensitivity to distance metric (Euclidean vs Manhattan vs Cosine vs Chebyshev)
+python3 refrigerant_finding/profile_robustness/distance_metric_sensitivity_ranks.py
+
+# 5. Reference set bootstrapping (50 replicates)
+python3 refrigerant_finding/profile_robustness/resample_reference_metrics.py --mode bootstrap --n-replicates 50
+```
+
+---
 
 ## License
 
-MIT. CoCoGraph remains under its own license in its own repository.
+MIT License. CoCoGraph remains under its own license in its repository ([https://github.com/seeslab/cocograph](https://github.com/seeslab/cocograph)).

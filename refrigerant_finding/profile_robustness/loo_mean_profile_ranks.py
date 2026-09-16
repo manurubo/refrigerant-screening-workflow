@@ -67,10 +67,10 @@ from loo_descriptor_metrics import (  # noqa: E402
 
 # Strategy pools (relative to refrigerant_finding/)
 STRATEGY_POOLS: dict[str, str] = {
-    "I": "candidates",
-    "IIa": "candidates_novel",
-    "IIb": "candidates_novel_seguridad",
-    "III": "candidates_refrigerantsmf",
+    "I": "candidates_type_i_training_db",
+    "IIa": "candidates_type_iia_generated_pubchem",
+    "IIb": "candidates_type_iib_generated_novel",
+    "III": "candidates_type_iii_formula_matched",
 }
 
 # Hardcoded working-fluid mean profile actually used by the original
@@ -135,12 +135,12 @@ TOP_K = 100
 # PubChem-absent in rank order → top-100 → dedup → Excel (84).
 # NOT "IIa handoff (56) then PubChem" (that only yields ~17).
 IIB_PUBCHEM_FILE = (
-    "candidates_novel_seguridad/CID-SMILES-filtered-lt70_canonical.txt"
+    "candidates_type_iib_generated_novel/CID-SMILES-filtered-lt70_canonical.txt"
 )
 IIB_ABSENT_CACHE = "ranks/iib_pubchem_absent_candidate_smiles.txt"
 # Shipped with this repo so type-IIb ranking does not require the ~4 GB PubChem dump.
 SHIPPED_IIB_CACHE = (
-    "candidates_novel_seguridad/iib_pubchem_absent_candidate_smiles.txt"
+    "candidates_type_iib_generated_novel/iib_pubchem_absent_candidate_smiles.txt"
 )
 
 

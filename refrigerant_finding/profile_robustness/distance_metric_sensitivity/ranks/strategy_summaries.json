@@ -7,7 +7,7 @@
     "n_ranking_universe": 28236,
     "note": "Baseline is recomputed Euclidean using the paper's hardcoded mean profile and full-CSV min-max scales; reproduces the historical CSV RefrigerantDistance (Tables S2-S5) to >=6 significant figures.",
     "paper_filtered_n": 65,
-    "pool_path": "/export/home/shared/Projects/Manu22-23/MoleculeDifusion/RefrigerantFinding/refrigerant_finding/candidates/all_molecules_ranked.csv"
+    "pool_path": "/export/home/shared/Projects/Manu22-23/MoleculeDifusion/RefrigerantFinding/refrigerant_finding/candidates_type_i_training_db/all_molecules_ranked.csv"
   },
   "III": {
     "baseline_filtered_n": 23,
@@ -17,7 +17,7 @@
     "n_ranking_universe": 69,
     "note": "Baseline is recomputed Euclidean using the paper's hardcoded mean profile and full-CSV min-max scales; reproduces the historical CSV RefrigerantDistance (Tables S2-S5) to >=6 significant figures.",
     "paper_filtered_n": 23,
-    "pool_path": "/export/home/shared/Projects/Manu22-23/MoleculeDifusion/RefrigerantFinding/refrigerant_finding/candidates_refrigerantsmf/all_molecules_ranked.csv"
+    "pool_path": "/export/home/shared/Projects/Manu22-23/MoleculeDifusion/RefrigerantFinding/refrigerant_finding/candidates_type_iii_formula_matched/all_molecules_ranked.csv"
   },
   "IIa": {
     "baseline_filtered_n": 56,
@@ -27,7 +27,7 @@
     "n_ranking_universe": 24230,
     "note": "Baseline is recomputed Euclidean using the paper's hardcoded mean profile and full-CSV min-max scales; reproduces the historical CSV RefrigerantDistance (Tables S2-S5) to >=6 significant figures.",
     "paper_filtered_n": 56,
-    "pool_path": "/export/home/shared/Projects/Manu22-23/MoleculeDifusion/RefrigerantFinding/refrigerant_finding/candidates_novel/all_molecules_ranked.csv"
+    "pool_path": "/export/home/shared/Projects/Manu22-23/MoleculeDifusion/RefrigerantFinding/refrigerant_finding/candidates_type_iia_generated_pubchem/all_molecules_ranked.csv"
   },
   "IIb": {
     "baseline_filtered_n": 84,
@@ -37,6 +37,6 @@
     "n_ranking_universe": 10632,
     "note": "Baseline is recomputed Euclidean using the paper's hardcoded mean profile and full-CSV min-max scales; reproduces the historical CSV RefrigerantDistance (Tables S2-S5) to >=6 significant figures.",
     "paper_filtered_n": 64,
-    "pool_path": "/export/home/shared/Projects/Manu22-23/MoleculeDifusion/RefrigerantFinding/refrigerant_finding/candidates_novel_seguridad/all_molecules_ranked.csv"
+    "pool_path": "/export/home/shared/Projects/Manu22-23/MoleculeDifusion/RefrigerantFinding/refrigerant_finding/candidates_type_iib_generated_novel/all_molecules_ranked.csv"
   }
 }

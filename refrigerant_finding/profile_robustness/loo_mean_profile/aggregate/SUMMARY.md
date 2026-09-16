@@ -62,17 +62,7 @@ descriptors. Each fold recomputes the **mean profile** on the remaining
 - `descriptor_mean_stability.csv` — per-descriptor sensitivity
 - `headline_claims.json`
 
-## Next stage (not run yet)
+## Next stage
 
-Full candidate re-rank against each LOO mean on strategy CSVs, then:
+Run `--stage ranks` for full candidate re-rank + retention / A–E metrics.
 
-1. Of the baseline **top-100** (by distance), how many remain in top-100?
-2. Of the **filtered Thermo handoff sets** (top-100 → drop dups + known
-   refrigerants → ~65 / 56 / 64 / 23 for I / IIa / IIb / III), how many
-   still survive that same filter path under the LOO mean?
-3. A–E: Δdistance, Δrank, and whether they enter/leave top-100.
-
-## Figures and SI tables
-
-- Figures: `aggregate/figures/` (PNG + PDF; start with `fig_mean_profile_loo_summary`)
-- Tables: `aggregate/tables/` (`SI_tables_draft.md`, per-fold and per-descriptor CSVs)

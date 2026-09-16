@@ -10,10 +10,10 @@ from rdkit import Chem
 def main():
     # Parse command line arguments
     parser = argparse.ArgumentParser(description='Extract properties of molecules in the canonicalized grid visualization.')
-    parser.add_argument('--csv_file', type=str, default='refrigerant_finding/candidates/top_100_molecules.csv',
-                        help='Path to the CSV file containing molecules (default: refrigerant_finding/candidates/top_100_molecules.csv)')
-    parser.add_argument('--output_dir', type=str, default='refrigerant_finding/candidates',
-                        help='Directory to save output files (default: refrigerant_finding/candidates)')
+    parser.add_argument('--csv_file', type=str, default='refrigerant_finding/candidates_type_i_training_db/top_100_molecules.csv',
+                        help='Path to the CSV file containing molecules (default: refrigerant_finding/candidates_type_i_training_db/top_100_molecules.csv)')
+    parser.add_argument('--output_dir', type=str, default='refrigerant_finding/candidates_type_i_training_db',
+                        help='Directory to save output files (default: refrigerant_finding/candidates_type_i_training_db)')
     parser.add_argument('--output_file', type=str, default='canonicalized_molecules_properties.csv',
                         help='Name of the output CSV file (default: canonicalized_molecules_properties.csv)')
     

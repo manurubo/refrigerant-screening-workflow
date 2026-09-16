@@ -8,35 +8,35 @@
       "smiles": "CC(F)(F)CF",
       "formula_paper": "CH3CF2CH2F",
       "strategy": "III",
-      "pool_dir": "candidates_refrigerantsmf"
+      "pool_dir": "candidates_type_iii_formula_matched"
     },
     {
       "code": "B",
       "smiles": "CC(F)(F)C(F)(F)F",
       "formula_paper": "CH3CF2CF3 (R245cb)",
       "strategy": "I",
-      "pool_dir": "candidates"
+      "pool_dir": "candidates_type_i_training_db"
     },
     {
       "code": "C",
       "smiles": "C=C(C)C(F)(F)F",
       "formula_paper": "CH3C(=CH2)CF3",
       "strategy": "III",
-      "pool_dir": "candidates_refrigerantsmf"
+      "pool_dir": "candidates_type_iii_formula_matched"
     },
     {
       "code": "D",
       "smiles": "FC(F)(F)C(Br)Br",
       "formula_paper": "CF3CBr2H",
       "strategy": "IIa",
-      "pool_dir": "candidates_novel"
+      "pool_dir": "candidates_type_iia_generated_pubchem"
     },
     {
       "code": "E",
       "smiles": "CN(F)C(F)Br",
       "formula_paper": "CH3NFCHFBr",
       "strategy": "IIb",
-      "pool_dir": "candidates_novel_seguridad"
+      "pool_dir": "candidates_type_iib_generated_novel"
     }
   ]
 }

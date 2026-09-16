@@ -17,7 +17,7 @@ logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(
 logger = logging.getLogger(__name__)
 
 # Create output directories
-OUTPUT_DIR = "refrigerant_finding/candidates"
+OUTPUT_DIR = "refrigerant_finding/candidates_type_i_training_db"
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
 # Font settings for plots
@@ -410,8 +410,8 @@ def main():
                         help='Random seed for reproducibility')
     parser.add_argument('--use_calculated_means', action='store_true',
                         help='Use means calculated from refrigerants.csv instead of predefined means from REFRIGERANT_PROPERTIES.md')
-    parser.add_argument('--output_dir', type=str, default='refrigerant_finding/candidates',
-                        help='Directory to save output files (default: refrigerant_finding/candidates)')
+    parser.add_argument('--output_dir', type=str, default='refrigerant_finding/candidates_type_i_training_db',
+                        help='Directory to save output files (default: refrigerant_finding/candidates_type_i_training_db)')
     parser.add_argument('--properties_doc', type=str, default='refrigerant_finding/REFRIGERANT_PROPERTIES.md',
                         help='Path to the refrigerant properties documentation file')
     parser.add_argument('--unique', action='store_true',

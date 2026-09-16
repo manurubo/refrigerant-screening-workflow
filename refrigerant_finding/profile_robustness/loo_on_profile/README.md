@@ -68,22 +68,7 @@ loo_on_profile/
     fixed15_rank_matrix.csv
     fixed15_pvalue_matrix.csv
     near_substitutes_frequency.csv
-  aggregation/                     # SI-oriented re-aggregation
-    SUMMARY.md
-    headline_claims.json
-    tables/
-    figures/
 ```
-
-## Publication aggregation
-
-Refined SI-oriented tables/figures (consumes existing LOO outputs; does not re-run LOO):
-
-```bash
-python3 refrigerant_finding/profile_robustness/aggregate_loo_descriptor_metrics.py
-```
-
-Writes `aggregation/` (`tables/`, `figures/`, `SUMMARY.md`, `headline_claims.json`).
 
 ## Inputs
 

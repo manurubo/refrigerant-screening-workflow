@@ -89,10 +89,10 @@ Filtering the IIa handoff (56) by PubChem only yields ~17 — that is **not** th
 
 | Strategy | Pool | Paper filtered n |
 |----------|------|------------------|
-| I | `candidates/` | 65 |
-| IIa | `candidates_novel/` | 56 |
-| IIb | `candidates_novel_seguridad/` | 64 |
-| III | `candidates_refrigerantsmf/` | 23 |
+| I | `candidates_type_i_training_db/` | 65 |
+| IIa | `candidates_type_iia_generated_pubchem/` | 56 |
+| IIb | `candidates_type_iib_generated_novel/` | 64 |
+| III | `candidates_type_iii_formula_matched/` | 23 |
 
 A–E mapping: `focal_candidates.json`.
 

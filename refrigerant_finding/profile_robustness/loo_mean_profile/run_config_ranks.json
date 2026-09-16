@@ -5,11 +5,11 @@
   "scale_mode_ranks": "freeze_refrigerants_union_pool",
   "stage": "ranks",
   "strategies": {
-    "I": "candidates",
-    "III": "candidates_refrigerantsmf",
-    "IIa": "candidates_novel",
-    "IIb": "candidates_novel_seguridad"
+    "I": "candidates_type_i_training_db",
+    "III": "candidates_type_iii_formula_matched",
+    "IIa": "candidates_type_iia_generated_pubchem",
+    "IIb": "candidates_type_iib_generated_novel"
   },
-  "timestamp_utc": "2026-08-05T14:07:46.059534+00:00",
+  "timestamp_utc": "2026-09-16T14:08:07.249547+00:00",
   "top_k": 100
 }

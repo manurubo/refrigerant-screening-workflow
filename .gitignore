@@ -63,17 +63,17 @@ refrigerant_finding/refrigerant_finding/
 **/CID-SMILES*
 
 # Type IIb folder keeps only the shared ranking symlink + PubChem-absent cache
-refrigerant_finding/candidates_novel_seguridad/*
-!refrigerant_finding/candidates_novel_seguridad/README.md
-!refrigerant_finding/candidates_novel_seguridad/iib_pubchem_absent_candidate_smiles.txt
-!refrigerant_finding/candidates_novel_seguridad/all_molecules_ranked.csv
+refrigerant_finding/candidates_type_iib_generated_novel/*
+!refrigerant_finding/candidates_type_iib_generated_novel/README.md
+!refrigerant_finding/candidates_type_iib_generated_novel/iib_pubchem_absent_candidate_smiles.txt
+!refrigerant_finding/candidates_type_iib_generated_novel/all_molecules_ranked.csv
 
 # Not part of the screening workflow
 refrigerant_finding/molecules_with_melting_points.csv
 refrigerant_finding/Compound List.xlsx
 
-refrigerant_finding/candidates_refrigerantsmf/canonicalized_molecules_properties.csv
-refrigerant_finding/candidates_refrigerantsmf/synthesizability_*
+refrigerant_finding/candidates_type_iii_formula_matched/canonicalized_molecules_properties.csv
+refrigerant_finding/candidates_type_iii_formula_matched/synthesizability_*
 third_party/
 synthesizability/
 **/synthesizability_*

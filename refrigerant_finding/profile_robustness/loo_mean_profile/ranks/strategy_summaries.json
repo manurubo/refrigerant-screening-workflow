@@ -10,7 +10,7 @@
     "n_pool_full_csv": 28236,
     "n_ranking_universe": 28236,
     "paper_filtered_n": 65,
-    "pool_path": "/export/home/shared/Projects/Manu22-23/MoleculeDifusion/RefrigerantFinding/refrigerant_finding/candidates/all_molecules_ranked.csv",
+    "pool_path": "/export/home/shared/Projects/Manu22-23/MoleculeDifusion/RefrigerantFinding/refrigerant_finding/candidates_type_i_training_db/all_molecules_ranked.csv",
     "ranking_universe_note": "full ranked CSV (candidates + refrigerants present in file)"
   },
   "III": {
@@ -24,7 +24,7 @@
     "n_pool_full_csv": 69,
     "n_ranking_universe": 69,
     "paper_filtered_n": 23,
-    "pool_path": "/export/home/shared/Projects/Manu22-23/MoleculeDifusion/RefrigerantFinding/refrigerant_finding/candidates_refrigerantsmf/all_molecules_ranked.csv",
+    "pool_path": "/export/home/shared/Projects/Manu22-23/MoleculeDifusion/RefrigerantFinding/refrigerant_finding/candidates_type_iii_formula_matched/all_molecules_ranked.csv",
     "ranking_universe_note": "full ranked CSV (candidates + refrigerants present in file)"
   },
   "IIa": {
@@ -38,7 +38,7 @@
     "n_pool_full_csv": 24230,
     "n_ranking_universe": 24230,
     "paper_filtered_n": 56,
-    "pool_path": "/export/home/shared/Projects/Manu22-23/MoleculeDifusion/RefrigerantFinding/refrigerant_finding/candidates_novel/all_molecules_ranked.csv",
+    "pool_path": "/export/home/shared/Projects/Manu22-23/MoleculeDifusion/RefrigerantFinding/refrigerant_finding/candidates_type_iia_generated_pubchem/all_molecules_ranked.csv",
     "ranking_universe_note": "full ranked CSV (candidates + refrigerants present in file)"
   },
   "IIb": {
@@ -52,7 +52,7 @@
     "n_pool_full_csv": 24230,
     "n_ranking_universe": 10632,
     "paper_filtered_n": 64,
-    "pool_path": "/export/home/shared/Projects/Manu22-23/MoleculeDifusion/RefrigerantFinding/refrigerant_finding/candidates_novel_seguridad/all_molecules_ranked.csv",
+    "pool_path": "/export/home/shared/Projects/Manu22-23/MoleculeDifusion/RefrigerantFinding/refrigerant_finding/candidates_type_iib_generated_novel/all_molecules_ranked.csv",
     "ranking_universe_note": "PubChem-absent candidates in original novel-CSV rank order (visualize_novel_molecules_grid.py); NOT IIa-handoff\u2192PubChem"
   }
 }
