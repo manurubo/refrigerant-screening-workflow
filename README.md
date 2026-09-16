@@ -15,7 +15,6 @@ The generative model itself is released separately at [https://github.com/seesla
 ├── requirements.txt                              <- Python dependencies
 └── refrigerant_finding/
     ├── refrigerants.csv                          <- 38 known working fluids (ASHRAE reference)
-    ├── refrigerants_extra.csv                    <- Additional working fluids
     ├── REFRIGERANT_PROPERTIES.md                 <- Curated 15-D profile target values
     │
     ├── statistical_comparison/                   <- Profiling & reference data
@@ -62,7 +61,7 @@ The generative model itself is released separately at [https://github.com/seesla
 |---|---|---|---|---|
 | **Type I** | CoCoGraph training database (2.25 M) | `refrigerant_finding/candidates_type_i_training_db/` | 65 molecules | Compound B (`R245cb`) |
 | **Type IIa** | Generated database, present in PubChem | `refrigerant_finding/candidates_type_iia_generated_pubchem/` | 56 molecules | Compound D (`CF3CBr2H`) |
-| **Type IIb** | Generated database, novel / absent from PubChem | `refrigerant_finding/candidates_type_iib_generated_novel/` | 84 (64 in paper text) | Compound E (`CH3NFCHFBr`) |
+| **Type IIb** | Generated database, novel / absent from PubChem | `refrigerant_finding/candidates_type_iib_generated_novel/` | 84 molecules | Compound E (`CH3NFCHFBr`) |
 | **Type III** | Formula-matched CoCoGraph generation | `refrigerant_finding/candidates_type_iii_formula_matched/` | 23 molecules | Compounds A & C |
 
 Each candidate directory ships the full ranking universe (`all_molecules_ranked.csv`), the `top_100_molecules.csv`, and the post-filter candidate properties passed to thermodynamic evaluation.

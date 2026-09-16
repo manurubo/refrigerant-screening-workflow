@@ -397,14 +397,10 @@ def main():
                         help='Buffer factor for size matching (default: 1.0 = no buffer)')
     parser.add_argument('--atom_range', nargs=2, type=int, metavar=('MIN_ATOMS', 'MAX_ATOMS'),
                         help='Restrict analysis to molecules with specified heavy atom count range (e.g., --atom_range 5 10)')
-    parser.add_argument('--include_extra_refrigerants', action='store_true',
-                        help='Include additional refrigerants from refrigerants_extra.csv')
     parser.add_argument('--database_file', type=str, default='molecular_formulas.csv',
                         help='Path to the CoCoGraph training/reference SMILES database (default: molecular_formulas.csv)')
     parser.add_argument('--refrigerants_file', type=str, default='refrigerant_finding/refrigerants.csv',
                         help='Path to the known working-fluids file')
-    parser.add_argument('--extra_refrigerants_file', type=str, default='refrigerant_finding/refrigerants_extra.csv',
-                        help='Path to extra working fluids used with --include_extra_refrigerants')
     args = parser.parse_args()
     
     # Set random seed
@@ -413,20 +409,6 @@ def main():
     # Load refrigerants
     logger.info("Loading refrigerants...")
     refrigerants_df = pd.read_csv(args.refrigerants_file)
-    
-    # Load extra refrigerants if specified
-    if args.include_extra_refrigerants:
-        logger.info("Loading extra refrigerants...")
-        try:
-            extra_refrigerants_df = pd.read_csv(args.extra_refrigerants_file)
-            logger.info(f"Found {len(extra_refrigerants_df)} additional refrigerants")
-            
-            # Combine with main refrigerants dataframe
-            refrigerants_df = pd.concat([refrigerants_df, extra_refrigerants_df], ignore_index=True)
-            logger.info(f"Total refrigerants: {len(refrigerants_df)}")
-        except Exception as e:
-            logger.error(f"Error loading extra refrigerants: {e}")
-            logger.info("Continuing with only the original refrigerants")
     
     # Load molecular database
     logger.info("Loading molecular database...")
