@@ -113,6 +113,40 @@ Run scripts from the repository root. RDKit is required for descriptor
 computation and ranking; the robustness re-ranking steps can reuse the
 shipped CSVs without regenerating the CoCoGraph databases.
 
+## Repository map
+
+Git tracks the screening workflow only. Paper materials, figure scripts, and
+CoCoGraph remain on disk locally but are gitignored.
+
+```
+.                               tracked
+├── README.md                   yes  (this file)
+├── LICENSE                     yes
+├── requirements.txt            yes
+├── cocograph/                  no   (https://github.com/seeslab/cocograph)
+├── molecular_formulas.csv      no   (CoCoGraph training SMILES; pass --database_file)
+└── refrigerant_finding/
+    ├── refrigerant_comparison.py         yes
+    ├── find_refrigerant_candidates.py    yes
+    ├── extract_properties.py             yes
+    ├── generate_type_iii_seeds.py        yes
+    ├── refrigerants.csv                  yes  (38 fluids)
+    ├── REFRIGERANT_PROPERTIES.md         yes  (15-D means)
+    ├── statistical_comparison/*.csv      yes  (plots/ excluded)
+    ├── candidates/                       yes  type I CSVs (PNG/XLSX excluded)
+    ├── candidates_novel/                 yes  type IIa CSVs
+    ├── candidates_novel_seguridad/       yes  type IIb cache + ranked symlink
+    ├── candidates_refrigerantsmf/        yes  type III CSVs
+    ├── profile_robustness/               yes  analysis scripts + tables
+    │                                      no   plot_*.py, figures/, SI tex
+    ├── paper_final/                      no
+    ├── create_paper_figures*.py          no
+    ├── visualize_*.py                    no
+    ├── candidates_generated*/            no   unpublished dumps
+    ├── third_party/, synthesizability/   no
+    └── find_melting_points*              no
+```
+
 ## License
 
 MIT. CoCoGraph remains under its own license in its own repository.
